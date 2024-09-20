@@ -1,0 +1,80 @@
+
+
+ body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  
+  h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: #2596be;
+}
+
+#copertina-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  opacity: 0.8; 
+  }
+#copertina-testo {
+    margin-top: -150px; /* Sposta il testo di 50 pixel verso l'alto */
+}
+
+h1 {
+  font-size: 80px;
+  color: black;
+  text-align: start;
+ 
+}
+
+
+h4 {
+    text-align: center;
+}
+
+.card {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+hidden {
+    display: none;
+}
+.image img {
+    width: 200px !important; 
+    height: 100px !important;
+}
+
+
+.accordion-collapse {
+    background-color: #add9e7;
+}
+
+.info:hover {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FBD26C;
+    text-decoration: underline;
+}
+
+.footer {
+    color: white;
+    margin-top: 80px;
+    background-color: #366880;
+    background-size: 2000px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 70px !important;
+}

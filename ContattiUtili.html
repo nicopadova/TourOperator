@@ -1,0 +1,381 @@
+<html>
+
+<head>
+    <title>
+        Contatti Utili
+    </title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/ContattiUtili.css">
+</head>
+<body class="body w-100" style="font-family: Poppins, sans-serif; background-color: white; background-size: 1000px ;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiar" style="background-color: #f4f4f4;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="file:///C:/Users/gabry/Desktop/Tour%20Operator/Home.html">
+                <img src="IMMAGINI PROGETTO/png-clipart-tour-operator-logo-tours-graphic-design-egipto-paquetes-de-vacaciones-tour-operator-logo.png"
+                    alt="Logo" width="200" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Chi Siamo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="file:///C:/Users/gabry/Desktop/Tour%20Operator/ChiSiamo.html">La Nostra
+                                    Storia</a></li>
+                            <li><a class="dropdown-item" href="ContattiUtili.html">Contatti</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Destinazioni
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="destinazioni.html">Accedi a tutte le Destinazioni</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Alloggi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Alloggi.html">Hotel</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Offerte
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pacchetti.html">Pacchetti</a></li>
+                            <li><a class="dropdown-item" href="LastMinute.html">Last Minute</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Preventivo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Preventivatore.html">Richiedi un Preventivo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="dropdown" style="margin-right: 10px;">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="IMMAGINI PROGETTO/user-profile-icon-free-vector.png" alt="user" width="50"
+                            height="50">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Accedi.html">Accedi</a></li>
+                        <li><a class="dropdown-item" href="Registrati.html">Registrati</a></li>
+                    </ul>
+                </div>
+                <br>
+                <form class="d-flex" role="search" style="margin-top: 25px;">
+
+                    <div class="input-group my-2">
+                        <input type="text" class="form-control" id="searchbar" placeholder="Cerca prodotti..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <button class="btn btn-primary" type="button" id="button-addon1" onclick="cerca()">Cerca</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+    <nav class="shadow border-top pt-1" aria-label="breadcrumb" style="background-color: #f4f4f4;">
+        <div class="container-fluid ps-0 ms-0">
+            <ol class="breadcrumb mb-0 ms-2 ps-1 pb-1">
+                <li class="breadcrumb-item"><a href="./Home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contatti Utili</li>
+            </ol>
+        </div>
+    </nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="IMMAGINI PROGETTO/contatti.jpg" class="d-block w-100" alt="..." style="opacity: 0.8;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Contatti e Assistenza</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h1 style="text-align: center;">I nostri Contatti e Assistenza</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-left: 10px;">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <img src="IMMAGINI PROGETTO/headphones-logo-can-be-used-600nw-1612779220.png" class="img" alt="..."
+                        width="75px" height="75px">
+                    <h5 class="card-title">Contact Center</h5>
+                    <p class="card-text">Dal Lunedì al Sabato, dalle 9:00 alle 19:30, al costo di una chiamata
+                        nazionale, i nostri consulenti sapranno guidarti nell'acquisto della tua prossima vacanza.
+                        Chiama il numero 0738.17531</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <img src="IMMAGINI PROGETTO/png-clipart-smartphone-application-logo-whatsapp-whatsapp-blue-text.png"
+                        class="img" alt="..." width="75px" height="75px">
+                    <h5 class="card-title">WhatsApp</h5>
+                    <p class="card-text">Scrivici su WhatsApp: uno dei nostri professionisti sarà a tua disposizione per
+                        ogni esigenza. Clicca nell'icona del menù in alto del tuo smartphone..</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <img src="IMMAGINI PROGETTO/calendar.png" class="img" alt="..." width="75px" height="75px">
+                    <h5 class="card-title">Prenota un appuntamento</h5>
+                    <p class="card-text">Vorresti avere un consulente a completa disposizione all'orario che vuoi?
+                        Potrai scegliere se farti richiamare al telefono o in Video Chat..</p>
+                    <a class="btn btn-primary" href="#" role="button"
+                        style="background-color: white; color: #2e92a9;">Prenota qui</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <img src="IMMAGINI PROGETTO/illustration-blue-airplane-icon-260nw-509805037.png" class="img"
+                        alt="..." width="75px" height="75px">
+                    <h5 class="card-title">Agenzia di Viaggio</h5>
+                    <p class="card-text">Prenotare la tua vacanza in agenzia è la modalità che preferisci? <a href="#"
+                            title="agenzia" style="color: #2e92a9; text-decoration: none;">Clicca qui</a> per trovare
+                        l'agenzia più vicina a casa tua per ottenere professionalità, consulenza e cortesia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <img src="IMMAGINI PROGETTO/7893389.png" class="img" alt="..." width="75px" height="75px">
+                    <h5 class="card-title">Social</h5>
+                    <p class="card-text">Cerchi ispirazione, consigli di viaggio, qualche dritta da viaggiatore a
+                        viaggiatore? Segui i nostri profili su Facebook, Instagram e Telegram!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <img src="IMMAGINI PROGETTO/upload.png" class="img" alt="..." width="75px" height="75px">
+                    <h5 class="card-title">Cerca sul sito e paga in agenzia</h5>
+                    <p class="card-text">Cerca sul sito il tuo viaggio e procedi all'acquisto: dopo aver effettuato il
+                        login, clicca su "Salva e condividi con la tua agenzia" in altro a destra.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <img src="IMMAGINI PROGETTO/24htele.png" class="img" alt="..." width="75px" height="75px">
+                    <h5 class="card-title">Amico World</h5>
+                    <p class="card-text">Per qualsiasi necessità durante il tuo soggiorno, ti offriamo il Servizio Amico
+                        World, disponibile tutti i giorni h24 chiamando il numero <a href="#" title="number"
+                            style="color: #2e92a9; text-decoration: none;">012.19912471</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <img src="IMMAGINI PROGETTO/pngtree-vector-woman-icon-png-image_4232513.png" class="img" alt="..."
+                        width="75px" height="75px">
+                    <h5 class="card-title">A destinazione</h5>
+                    <p class="card-text">Al tuo arrivo a destinazione, troverai i nostri assistenti ad attenderti in
+                        aeroporto. Ti daranno consigli utili per il tuo soggiorno, offrendoti il massimo
+                        dell'accoglienza per tutta la durata della vacanza.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <img src="IMMAGINI PROGETTO/sinistri.png" class="img" alt="..." width="75px" height="75px">
+                    <h5 class="card-title">Apertura Sinistri</h5>
+                    <p class="card-text">Sei appena tornata da una vacanza e hai necessità di aprire un sinistro? Puoi
+                        farlo online grazie al servizio Europe Assistance riservato ai clienti del gruppo Calypso Tour.
+                    </p>
+                    <a class="btn btn-primary" href="#" role="button"
+                        style="background-color: white; color: #2e92a9;">Clicca qui</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h1 style="text-align: center;">Mandaci un Messaggio</h1>
+    <br>
+    <form class="row g-3" style="margin-left: 10px;" id="contatto-form">
+        <input type="hidden" id="contatto-id">
+        <div class="col-md-6" >
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" style="border-style: solid; border-color: #2e92a9;">
+        </div>
+        <div class="col-md-6">
+            <label for="cognome" class="form-label">Cognome</label>
+            <input type="text" class="form-control" id="cognome" name="cognome" placeholder="Cognome" style="border-style: solid; border-color: #2e92a9; ">
+        </div>
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" style="border-style: solid; border-color: #2e92a9;">
+        </div>
+        <div class="col-md-6">
+            <label for="telefono" class="form-label">Telefono</label>
+            <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Telefono" style="border-style: solid; border-color: #2e92a9;">
+        </div>
+        <br>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Scrivi qui un messaggio" id="commento" name="commento"
+                style="height: 100px; border-style: solid; border-color: #2e92a9;"></textarea>
+            <label for="commento">Messaggio</label>
+        </div>
+        <br>
+        <div class="col-md-6">
+            <button type="submit" class="btn btn-outline-primary">Invia</button>
+        </div>
+    </form>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/ContattiUtili.js"></script>
+</body>
+<footer class="footer w-100" style="font-family: Poppins, sans-serif;  ">
+    
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <br>
+                <br>
+                <h3>La Nostra Azienda</h3>
+                <br>
+                <p>Tour Calypso S.R.L.S</p>
+                <p><strong>Roma</strong> , Via dei Cerchi 17, 00186</p>
+                <p><strong>Partita IVA: </strong>03842567922</p>
+
+            </div>
+            <br>
+            <br>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <br>
+                <br>
+                <h3>Contatti</h3>
+                <br>
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-facebook-500.png" alt="Facebook">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-instagram-500.png" alt="Instagram">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-twitterx-500.png" alt="Twitter">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-youtube-logo-500.png" alt="Youtube">
+                </a>
+                <br>
+                <br>
+                <a class="telefono" href="#">
+                    <img src="IMMAGINI PROGETTO/telefono.png" alt="telefono">
+                    <span> +39 586 718 8296</span>
+                </a>
+                <br>
+                <br>
+                <a class="email" href="#">
+                    <img src="IMMAGINI PROGETTO/email.png" alt="email">
+                    <span> calypsotour@pec.it</span>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="linkbut">
+                    <br>
+                    <br>
+                    <h3>Link Utili</h3>
+                    <br>
+                    <a href="#">Home</a>
+                    <br>
+                    <br>
+                    <a href="#">Chi siamo</a>
+                    <br>
+                    <br>
+                    <a href="#">Servizi</a>
+                    <br>
+                    <br>
+                    <a href="#">Contatti</a>
+                    <br>
+                    <br>
+                    <a href="#">Metodi di Pagamento</a>
+                    <br>
+                    <br>
+                    <a href="#">Bagaglio</a>
+                    <br>
+                    <br>
+                    <a href="#">Assicurazioni</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="linkbut">
+                    <br>
+                    <br>
+                    <h3>Calypso World</h3>
+                    <br>
+                    <a href="#">Lavora con Noi</a>
+                    <br>
+                    <br>
+                    <a href="#">Il Gruppo</a>
+                    <br>
+                    <br>
+                    <a href="#">Area Riservata</a>
+                    <br>
+                    <br>
+                    <a href="#">Convenzioni</a>
+                    <br>
+                    <br>
+                    <a href="#">Escursioni</a>
+                    <br>
+                    <br>
+                    <a href="#">FAQ</a>
+                    <br>
+                    <br>
+                    <a href="#">Guida per gli Utenti</a>
+                    <br>
+                    <br>
+                    <a href="#">Guida per i Gestori</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+</html>

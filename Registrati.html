@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registrati</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--bootstrap-->
+        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+            rel="stylesheet">
+        <style>
+            input {
+                border: 0;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            .pw-eye {
+                height: 58px;
+            }
+
+            #errore, #errore_pw {
+                color: red;
+            }
+            
+            .mancante {
+                border-style: solid;
+                border-width: 2px;
+                border-color: red;
+            }
+
+            .invio:hover {
+                border-style: solid;
+                border-width: 2px;
+                border-color: #FBD26C;
+                text-decoration: underline;
+            }
+
+            /*FOOTER*/
+            .footer {
+                color: white;
+                margin-top: 80px;
+                background-color: #366880;
+                background-size: 2000px;
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+
+            }
+
+            .footer img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .footer a {
+                color: white;
+                text-decoration: none;
+                margin-bottom: 70px !important;
+            }
+        </style>
+    </head>
+    <body style="font-family: Poppins, sans-serif;">
+        <!--HEADER-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiar" style="background-color: #f4f4f4;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="IMMAGINI PROGETTO/png-clipart-tour-operator-logo-tours-graphic-design-egipto-paquetes-de-vacaciones-tour-operator-logo.png"
+                        alt="Logo" width="200" height="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Chi Siamo
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./ChiSiamo.html">Chi Siamo</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Destinazioni
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./destinazioni.html">Tutte le destinazioni</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Alloggi
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./Alloggi.html">Tutti i nostri alloggi</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Offerte
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pacchetti.html">Pacchetti</a></li>
+                                <li><a class="dropdown-item" href="./LastMinute.html">Last Minute</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Preventivo
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./Preventivatore.html">Richiedi un preventivo</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                    <div class="dropdown" style="margin-right: 10px;">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="IMMAGINI PROGETTO/user-profile-icon-free-vector.png" alt="user" width="50"
+                                height="50">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./Accedi.html">Accedi</a></li>
+                            <li><a class="dropdown-item" href="./Registrati.html">Registrati</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <form class="d-flex" role="search" style="margin-top: 12px;">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"
+                            style="color: #2e92a9; border-color: #2e92a9; ">Search</button>
+                    </form>
+    
+                </div>
+            </div>
+        </nav>
+        <nav class="shadow border-top pt-1" aria-label="breadcrumb" style="background-color: #f4f4f4;">
+            <div class="container-fluid ps-0 ms-0">
+                <ol class="breadcrumb ms-2 ps-1 pb-1">
+                    <li class="breadcrumb-item"><a href="./Home.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="./Accedi.html">Accedi</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Registrati</li>
+                </ol>
+            </div>
+        </nav>
+        <!--FINE HEADER-->
+
+        <div class="container my-5 p-3 rounded shadow-lg" style="width: 350px; background-color: #F4F4F4;"> <!--REGISTRATI-->
+            <div class="row text-center">
+                <div class="col-12 mb-2">
+                    <img src="./IMMAGINI PROGETTO/png-clipart-tour-operator-logo-tours-graphic-design-egipto-paquetes-de-vacaciones-tour-operator-logo.png" width="60px">
+                </div>
+                <div class="col-12 my-2">
+                    <p>Registrati alla tua Area Privata</p>
+                </div>
+            </div> <!--FINE RIGA-->
+            <div class="row text-center"> <!--FORM-->
+                <form id="registrati" name="form1" action="" onsubmit="signin(event)"> <!--FORM REGISTRAZIONE-->
+                    <label class="hidden pb-1" id="errore"><ins>CAMPO MANCANTE!</ins></label>
+                    <div class="form-floating mx-2 mb-2">
+                        <input type="email" class="form-control" name="email" id="email_utente" onclick="resetta()" placeholder="email@example.com">
+                        <label for="email_utente">Indirizzo Email</label>
+                    </div>
+                    <div class="form-floating mx-2 mb-2">
+                        <input type="text" class="form-control" name="nome" id="nome_utente" onclick="resetta()" placeholder="Nome">
+                        <label for="nome_utente">Nome</label>
+                    </div>
+                    <div class="form-floating mx-2 mb-2">
+                        <input type="text" class="form-control" name="cognome" id="cognome_utente" onclick="resetta()" placeholder="Cognome">
+                        <label for="cognome_utente">Cognome</label>
+                    </div>
+                    <div class="form-floating mx-2 mb-2" style="display: flex; flex-direction: row;">
+                        <input type="password" class="form-control" name="password" id="pw_accesso" onclick="resetta()" placeholder="Password" aria-describedby="basic-addon2">
+                        <label for="pw_accesso">Password</label>
+                        <span class="input-group-text pw-eye" id="basic-addon2" onclick="showHidePW('accesso')"><img src="./IMMAGINI PROGETTO/eye.png" class="opacity-50 accesso" height="45px"><img src="./IMMAGINI PROGETTO/hide.png" class="opacity-50 accesso hidden" height="45px"></span>
+                    </div>
+                    <div class="form-floating mx-2 mb-2" style="display: flex; flex-direction: row;">
+                        <input type="password" class="form-control" name="conferma" id="pw_conferma" onclick="resetta()" placeholder="Password" aria-describedby="basic-addon2">
+                        <label for="pw_accesso">Conferma Password</label>
+                        <span class="input-group-text pw-eye" id="basic-addon2" onclick="showHidePW('conferma')"><img src="./IMMAGINI PROGETTO/eye.png" class="opacity-50 conferma" height="45px"><img src="./IMMAGINI PROGETTO/hide.png" class="opacity-50 conferma hidden" height="45px"></span>
+                    </div>
+                    <label class="hidden pb-1" id="errore_pw"><ins>LE PASSWORD NON COINCIDONO!</ins></label>
+                    <div class="row text-center px-4"> <!--RIGA DATA DI NASCITA-->
+                        <div class="col-12 ps-0 mt-1 mb-1">
+                            <p class="text-start mt-2 mb-1" style="color: grey; font-size: small;">Data di nascita:</p>
+                        </div>
+                        <div class="col-12 col-md-4 my-1 px-0 pe-md-1">
+                            <select class="form-select" id="giorno">
+                                <option style="display: none;">GG</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4 my-1 px-0 pe-md-1">
+                            <select class="form-select" id="mese">
+                                <option style="display: none;">MM</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4 my-1 px-0">
+                            <select class="form-select" id="anno">
+                                <option style="display: none;">YYYY</option>
+                                <option value="1950">1950</option>
+                                <option value="1951">1951</option>
+                                <option value="1952">1952</option>
+                                <option value="1953">1953</option>
+                                <option value="1954">1954</option>
+                                <option value="1955">1955</option>
+                                <option value="1956">1956</option>
+                                <option value="1957">1957</option>
+                                <option value="1958">1958</option>
+                                <option value="1959">1959</option>
+                                <option value="1960">1960</option>
+                                <option value="1961">1961</option>
+                                <option value="1962">1962</option>
+                                <option value="1963">1963</option>
+                                <option value="1964">1964</option>
+                                <option value="1965">1965</option>
+                                <option value="1966">1966</option>
+                                <option value="1967">1967</option>
+                                <option value="1968">1968</option>
+                                <option value="1969">1969</option>
+                                <option value="1970">1970</option>
+                                <option value="1971">1971</option>
+                                <option value="1972">1972</option>
+                                <option value="1973">1973</option>
+                                <option value="1974">1974</option>
+                                <option value="1975">1975</option>
+                                <option value="1976">1976</option>
+                                <option value="1977">1977</option>
+                                <option value="1978">1978</option>
+                                <option value="1979">1979</option>
+                                <option value="1980">1980</option>
+                                <option value="1981">1981</option>
+                                <option value="1982">1982</option>
+                                <option value="1983">1983</option>
+                                <option value="1984">1984</option>
+                                <option value="1985">1985</option>
+                                <option value="1986">1986</option>
+                                <option value="1987">1987</option>
+                                <option value="1988">1988</option>
+                                <option value="1989">1989</option>
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
+                                <option value="1993">1993</option>
+                                <option value="1994">1994</option>
+                                <option value="1995">1995</option>
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                                <option value="1998">1998</option>
+                                <option value="1999">1999</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </div>
+                    </div> <!--FINE RIGA DATA DI NASCITA-->
+                    <div class="row px-4"> <!--RIGA PRIVACY-->
+                        <div class="col-12 ps-0 mt-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="CheckPrivacy" required disabled>
+                                <label class="form-check-label" for="CheckPrivacy">
+                                    <p style="color: grey; font-size: x-small; display:inline-block;">Ho letto e compreso l'</p>
+                                </label>
+                                <p style="color: grey; font-size: x-small; display:inline-block;"><a href="#" target="_blank" onclick="privacyLetta()">informativa sulla privacy</a></p>
+                            </div>
+                        </div>
+                    </div> <!--FINE RIGA PRIVACY-->
+                    <div class="row px-4"> <!--PULSANTE INVIO-->
+                        <input type="submit" class="btn invio" style="background-color: #EF7365; color:#F4F4F4" value="REGISTRATI">
+                    </div>
+                </form> <!--FINE FORM REGISTRAZIONE-->
+            </div>
+        </div> <!-- FINE REGISTRATI-->
+
+
+        <!--JS BOOTSTRAP-->
+        <script src="./JS/bootstrap.bundle.min.js"></script>
+        <!--JS-->
+        <script>
+            let letto = false;
+            const errore = document.getElementById('errore');
+            const err_pw = document.getElementById('errore_pw');
+            function validazione() {
+                /*const mAccesso = document.getElementById("email_utente");
+                const nUtente = document.getElementById("nome_utente");
+                const cogUtente = document.getElementById("cognome_utente");
+                const pAccesso = document.getElementById("pw_accesso");
+                const pConferma = document.getElementById("pw_conferma");
+                const confPrivacy = document.getElementById("CheckPrivacy");
+                const ggNascita = document.getElementById("giorno");
+                const mmNascita = document.getElementById("mese");
+                const yyNascita = document.getElementById("anno");
+                let incompleto = false;
+                //controllo che tutti i valori siano stati inseriti
+                if (mAccesso.value=="") {
+                    mAccesso.classList.add("mancante");
+                    incompleto=true;
+                };
+                if (nUtente.value=="") {
+                    nUtente.classList.add("mancante");
+                    incompleto=true;
+                }
+                if (cogUtente.value=="") {
+                    cogUtente.classList.add("mancante");
+                    incompleto=true;
+                }
+                if (pAccesso.value=="") {
+                    pAccesso.classList.add("mancante");
+                    incompleto=true;
+                }
+                if (pConferma.value=="") {
+                    pConferma.classList.add("mancante");
+                    incompleto=true;
+                }
+                //condizione per cui un valore manca
+                if (incompleto==true) {
+                    if(errore.classList.contains('hidden')) {
+                        errore.classList.remove('hidden');
+                    }
+                    incompleto = false;
+                }
+                //controllo che le due password inserite coincidano
+                if (pAccesso.value!=pConferma.value) {
+                    pAccesso.classList.add("mancante");
+                    pConferma.classList.add("mancante");
+                    if(err_pw.classList.contains('hidden')) {
+                        err_pw.classList.remove('hidden');
+                    }
+                }
+                //controllo che la data sia stata inserita correttamente
+                if (ggNascita.value=="GG") {
+                    if(errore.classList.contains('hidden')) {
+                        errore.classList.remove('hidden');
+                    }
+                    ggNascita.classList.add("mancante");
+                }
+                if (mmNascita.value=="MM") {
+                    if(errore.classList.contains('hidden')) {
+                        errore.classList.remove('hidden');
+                    }
+                    mmNascita.classList.add("mancante");
+                }
+                if (yyNascita.value=="YYYY") {
+                    if(errore.classList.contains('hidden')) {
+                        errore.classList.remove('hidden');
+                    }
+                    yyNascita.classList.add("mancante");
+                }
+
+                //controllo che la privacy sia stata letta
+                if(!letto) {
+                    confPrivacy.classList.add("mancante");
+                    if(errore.classList.contains('hidden')) {
+                        errore.classList.remove('hidden');
+                    }
+                }*/
+            };
+            function resetta() {
+                //tolgo il bordo rosso dei vari campi mancanti
+                const mancanti = document.getElementsByClassName("mancante");
+                for (let dato of mancanti) {
+                    dato.classList.remove("mancante");
+                }
+                //nascondo nuovamente il messaggio di errore campo mancante
+                if(!errore.classList.contains('hidden')) {
+                    errore.classList.add('hidden');
+                }
+                //nascondo il messaggio di errore password
+                if (!err_pw.classList.contains('hidden')) {
+                    err_pw.classList.add('hidden');
+                }
+            }
+            function privacyLetta() {
+                letto = true;
+                document.getElementById("CheckPrivacy").removeAttribute("disabled");
+            }
+            function showHidePW(tipo) {
+                //prendo le icone da cambiare
+                let icona = document.getElementsByClassName(tipo);
+                let password;
+                if (tipo == 'accesso') {
+                    password = document.getElementById('pw_accesso');
+                } else {
+                    password = document.getElementById('pw_conferma');
+                }
+                if (password.type=='password') {
+                    password.type='text';
+                } else {
+                    password.type='password';
+                }
+                for (let img of icona) {
+                    img.classList.toggle('hidden');
+                }
+            }
+            
+            async function signin(event) {
+                event.preventDefault();
+                const mailAccesso = document.getElementById("email_utente");
+                const nUtente = document.getElementById("nome_utente");
+                const cogUtente = document.getElementById("cognome_utente");
+                const passwordAccesso = document.getElementById("pw_accesso");
+                const pConferma = document.getElementById("pw_conferma");
+                const confPrivacy = document.getElementById("CheckPrivacy");
+                const ggNascita = document.getElementById("giorno");
+                const mmNascita = document.getElementById("mese");
+                const yyNascita = document.getElementById("anno");
+                let incompleto = false;
+                //controllo che tutti i valori siano stati inseriti
+                if (mailAccesso.value=="") {
+                    mailAccesso.classList.add("mancante");
+                    incompleto=true;
+                }
+                if (nUtente.value=="") {
+                    nUtente.classList.add("mancante");
+                    incompleto=true;
+                }
+                if (cogUtente.value=="") {
+                    cogUtente.classList.add("mancante");
+                    incompleto=true;
+                }
+                if (passwordAccesso.value=="") {
+                    passwordAccesso.classList.add("mancante");
+                    incompleto=true;
+                }
+                if (pConferma.value=="") {
+                    pConferma.classList.add("mancante");
+                    incompleto=true;
+                }
+                //condizione per cui un valore manca
+                if (incompleto==true) {
+                    if(errore.classList.contains('hidden')) {
+                        errore.classList.remove('hidden');
+                    }
+                }
+                //controllo che le due password inserite coincidano
+                let nonCoincidono=false;
+                if (passwordAccesso.value!=pConferma.value) {
+                    passwordAccesso.classList.add("mancante");
+                    pConferma.classList.add("mancante");
+                    nonCoincidono=true;
+                    if(err_pw.classList.contains('hidden')) {
+                        err_pw.classList.remove('hidden');
+                    }
+                }
+                //controllo che la data sia stata inserita correttamente
+                if (ggNascita.value=="GG") {
+                    if(errore.classList.contains('hidden')) {
+                        errore.classList.remove('hidden');
+                    }
+                    ggNascita.classList.add("mancante");
+                    incompleto=true;
+                }
+                if (mmNascita.value=="MM") {
+                    if(errore.classList.contains('hidden')) {
+                        errore.classList.remove('hidden');
+                    }
+                    mmNascita.classList.add("mancante");
+                    incompleto=true;
+                }
+                if (yyNascita.value=="YYYY") {
+                    if(errore.classList.contains('hidden')) {
+                        errore.classList.remove('hidden');
+                    }
+                    yyNascita.classList.add("mancante");
+                    incompleto=true;
+                }
+
+                //controllo che la privacy sia stata letta
+                if(confPrivacy.checked==false) {
+                    confPrivacy.classList.add("mancante");
+                    if(errore.classList.contains('hidden')) {
+                        errore.classList.remove('hidden');
+                    }
+                }
+                const formNewUtente = document.getElementById('registrati');
+                if ((letto)&&(!nonCoincidono)&&(!incompleto)) {
+                    const mail = mailAccesso.value;
+                    const password = passwordAccesso.value;
+                    const nome = nUtente.value;
+                    const cognome = cogUtente.value;
+                    const conferma = pConferma.value;
+                    const checkPrivacy = confPrivacy.checked;
+                    let nascitaUtente = new Date();
+                    nascitaUtente.setDate(ggNascita.value);
+                    nascitaUtente.setMonth((mmNascita.value-1));
+                    nascitaUtente.setFullYear(yyNascita.value);
+                    const ruolo="USER";
+                    
+                    const nuovoUtente = {
+                        nome: nome,
+                        cognome: cognome,
+                        ruolo: ruolo,
+                        email: mail,
+                        password: password,
+                        confermaPassword: conferma,
+                        nascita: nascitaUtente,
+                        privacyLetta: checkPrivacy
+                    }
+                    try {
+                        const response = await fetch('http://localhost:8080/auth/signin', {
+                            method: 'POST',
+                            headers: {
+                            'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(nuovoUtente)
+                        });
+                        
+                        if (response.status==200) {
+                            const data = await response.json();
+                            const token = data.token;
+                            localStorage.setItem('authToken', token);
+                            username = mail.value;
+                            window.location.href='./PaginaPersonale.html';
+                        }
+                    } catch (error) {
+                        console.error('errore durante la creazione nuovo utente');
+                    }
+                } else {
+                    console.error('campi mancanti');
+                }
+            }
+        </script>
+    </body>
+    <br>
+    <footer class="footer w-100" style="font-family: Poppins, sans-serif;  ">
+        <br>
+        <br>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <h3>La Nostra Azienda</h3>
+                    <br>
+                    <p>Tour Calypso S.R.L.S</p>
+                    <p><strong>Roma</strong> , Via dei Cerchi 17, 00186</p>
+                    <p><strong>Partita IVA: </strong>03842567922</p>
+    
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <h3>Contatti</h3>
+                    <br>
+                    <a href="#">
+                        <img src="IMMAGINI PROGETTO/icons8-facebook-500.png" alt="Facebook">
+                    </a>
+    
+                    <a href="#">
+                        <img src="IMMAGINI PROGETTO/icons8-instagram-500.png" alt="Instagram">
+                    </a>
+    
+                    <a href="#">
+                        <img src="IMMAGINI PROGETTO/icons8-twitterx-500.png" alt="Twitter">
+                    </a>
+    
+                    <a href="#">
+                        <img src="IMMAGINI PROGETTO/icons8-youtube-logo-500.png" alt="Youtube">
+                    </a>
+                    <br>
+                    <br>
+                    <a class="telefono" href="#">
+                        <img src="IMMAGINI PROGETTO/telefono.png" alt="telefono">
+                        <span> +39 586 718 8296</span>
+                    </a>
+                    <br>
+                    <br>
+                    <a class="email" href="#">
+                        <img src="IMMAGINI PROGETTO/email.png" alt="email">
+                        <span> calypsotour@pec.it</span>
+                    </a>
+    
+    
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="linkbut">
+                        <h3>Link Utili</h3>
+                        <br>
+                        <a href="./Home.html">Home</a>
+                        <br>
+                        <br>
+                        <a href="./ChiSiamo.html">Chi siamo</a>
+                        <br>
+                        <br>
+                        <a href="#">Servizi</a>
+                        <br>
+                        <br>
+                        <a href="#">Contatti</a>
+                        <br>
+                        <br>
+                        <a href="#">Metodi di Pagamento</a>
+                        <br>
+                        <br>
+                        <a href="#">Bagaglio</a>
+                        <br>
+                        <br>
+                        <a href="#">Assicurazioni</a>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="linkbut">
+                        <h3>Calypso World</h3>
+                        <br>
+                        <a href="#">Lavora con Noi</a>
+                        <br>
+                        <br>
+                        <a href="#">Il Gruppo</a>
+                        <br>
+                        <br>
+                        <a href="./Accedi.html">Area Riservata</a>
+                        <br>
+                        <br>
+                        <a href="#">Convenzioni</a>
+                        <br>
+                        <br>
+                        <a href="#">Escursioni</a>
+                        <br>
+                        <br>
+                        <a href="#">FAQ</a>
+                        <br>
+                        <br>
+                        <a href="#">Guida per gli Utenti</a>
+                        <br>
+                        <br>
+                        <a href="#">Guida per i Gestori</a>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+    </footer> 
+</html>

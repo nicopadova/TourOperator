@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinazione Esempio Roma</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/destinazioni.css">
+  <style>
+
+
+    ul {
+        list-style-type: square;
+    }
+ 
+    .body-img {
+        position: relative; /* Posiziona l'immagine relativamente al suo contenitore */
+        overflow: hidden; /* Nasconde le parti dell'immagine che fuoriescono dal contenitore */
+    }
+
+    .body-img img {
+        width: 100%; /* Imposta la larghezza dell'immagine al 100% del suo contenitore */
+        height: 300px; /* Mantiene il rapporto d'aspetto dell'immagine */
+       
+    }
+    .mapp{
+        text-align: center;
+    }
+    body {
+        margin: 1px 5px 0px 5px;
+    }
+
+    
+    
+
+  </style>
+</head>
+<body>
+    <body style="font-family: Poppins, sans-serif;"></body>
+     <!--nav bar-->
+     <nav class="navbar navbar-expand-lg bg-body-tertiar" style="background-color: #f4f4f4;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img src="IMMAGINI PROGETTO/png-clipart-tour-operator-logo-tours-graphic-design-egipto-paquetes-de-vacaciones-tour-operator-logo.png"
+                    alt="Logo" width="200" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Chi Siamo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ChiSiamo.html">La Nostra Storia</a></li>
+                            <li><a class="dropdown-item" href="ContattiUtili.html">Contatti</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Destinazioni
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="destinazioni.html">Accedi a tutte le Destinazioni</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Alloggi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Alloggi.html">Hotel</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Offerte
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pacchetti.html">Pacchetti</a></li>
+                            <li><a class="dropdown-item" href="LastMinute.html">Last Minute</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Preventivo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Preventivatore.html">Richiedi un Preventivo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="dropdown" style="margin-right: 10px;">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="IMMAGINI PROGETTO/user-profile-icon-free-vector.png" alt="user" width="50"
+                            height="50">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Accedi.html">Accedi</a></li>
+                        <li><a class="dropdown-item" href="Registrati.html">Registrati</a></li>
+                    </ul>
+                </div>
+                <br>
+                <form class="d-flex" role="search" style="margin-top: 12px;">
+                    <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                    <button class="btn btn-outline-primary" type="submit"
+                        style="border-color: #2e92a9; ">Cerca</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="shadow border-top pt-1" aria-label="breadcrumb" style="background-color: #f4f4f4;">
+        <div class="container-fluid ps-0 ms-0">
+            <ol class="breadcrumb mb-0 ms-2 ps-1 pb-1">
+                <li class="breadcrumb-item"><a href="./Home.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="./destinazioni.html">Destinazioni</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Roma</li>
+            </ol>
+        </div>
+    </nav>
+<!-- copertina-->
+
+    <div class="container-fluid text-center position-relative destinazione-copertina px-0">
+        <img id=copertina-img class="img-fluid" src="./IMMAGINI PROGETTO/view-ancient-roman-colosseum-arena.jpg">
+        <h1 id="copertina-testo" class="position-absolute top-50 start-50 translate-middle p-2 rounded shadow">Vola a Roma </h1>
+    </div>
+ 
+    
+    <!--sezione curiosità-->
+        <br>
+        
+        
+          <section>
+            <h2 align="center">10 Curiosità su Roma</h2>
+            <p> 
+                <font color="#EF7365">
+                Roma, la Città Eterna, è un luogo ricco di storia, cultura e fascino, dove ogni angolo nasconde una curiosità da scoprire. Ecco alcuni spunti per conoscere lati insoliti di questa splendida città:
+                </font>
+            </p>
+            <ol>
+                <li><strong>Le fontane:</strong> sapevate che Roma vanta oltre 2.500 fontane, più di qualsiasi altra città al mondo? Tra le più iconiche troviamo la Fontana di Trevi, dove lanciare una monetina per assicurarsi il ritorno a Roma, e la Barcaccia di Piazza Navona, capolavoro barocco opera di Pietro Bernini.</li>
+                <li><strong>I gatti:</strong> i felini sono parte integrante della vita romana. Secondo una leggenda, ogni romano ha un gatto custode. Un'altra curiosità: il gatto romano ha una coda particolare, "a coda tronca", dovuta a un incrocio con i gatti egizi.</li>
+                <li><strong>Il Colosseo:</strong> il famoso anfiteatro, simbolo di Roma, nasconde un segreto. Sotto l'arena si trova un complesso sistema di cunicoli e gallerie, dove gladiatori e animali venivano preparati per i combattimenti.</li>
+                <li><strong>La Bocca della Verità:</strong> questa maschera marmorea situata nella Chiesa di Santa Maria in Cosmedin è famosa per la leggenda che narra che morde la mano di chi mente. Provare per credere?</li>
+                <li><strong>Castel Sant'Angelo:</strong> questa imponente fortezza, originariamente un mausoleo per l'imperatore Adriano, ha avuto diverse funzioni nel corso dei secoli. Tra queste, ha ospitato il Papa e ha resistito a un assedio durante la Repubblica Romana.</li>
+                <li><strong>Le catacombe:</strong> sotto la città si estendono chilometri di gallerie sotterranee dove venivano sepolti i cristiani nei primi secoli d.C. Visitare le catacombe è un'esperienza suggestiva e ricca di storia.</li>
+                <li><strong>La piramide Cestia:</strong> questa misteriosa piramide, situata nei pressi del Gianicolo, è l'unica piramide egizia rimasta in Italia. La sua funzione originaria è ancora oggetto di dibattito tra gli studiosi.</li>
+                <li><strong>Il Gianicolo:</strong> da questo colle si gode una vista mozzafiato sulla città. Un'antica leggenda narra che qui sia avvenuto il bacio tra Garibaldi e Anita.</li>
+                <li><strong>Trastevere:</strong> questo pittoresco quartiere, un tempo abitato da artigiani e pescatori, conserva ancora la sua atmosfera bohémien. Perdetevi tra i vicoli, ammirate le sue casette colorate e concedetevi un buon pasto in una tipica trattoria.</li>
+                <li><strong>La lingua romana:</strong> il dialetto romano, ricco di espressioni vivaci e umoristiche, è parte integrante dell'identità della città. Imparare qualche parola o frase tipica vi aiuterà a immergervi completamente nella cultura romana.</li>
+              </ol>
+            </section>
+          
+        
+        <br>
+        <br>
+
+    <!--sezione pacchetti-->
+        
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2>I nostri pacchetti vacanza</h2>
+                <p>Il sole mattutino illumina le antiche pietre di Roma mentre mi perdo tra le vie del centro storico. Il Colosseo, simbolo di un impero glorioso, si erge imponente, raccontando storie di gladiatori e imperatori.<br> Passeggio tra i Fori Imperiali, immaginando le vivaci attività di un tempo. La Fontana di Trevi scintilla al sole, invitandomi a lanciare una monetina per assicurarmi il ritorno. La sera, mi lascio incantare dalla magia di Trastevere, dove vicoli pittoreschi e trattorie tipiche offrono un'atmosfera autentica. Un bicchiere di vino rosso sotto le stelle, circondato dal calore della gente romana, conclude la mia giornata perfetta.</p>
+                <div class="d-flex justify-content-center my-5">
+                    <a id=button href="pacchetti.html" class="btn btn-outline-warning">Pacchetti</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <a href="#">
+                    <div class="body-img">
+                    <img src="IMMAGINI PROGETTO/Roma 1.jpeg" alt="Mia immagine">
+                    </div>
+                </a>
+            </div>
+        </div>  
+<br>
+<!--sezione alloggi-->
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <a href="#">
+                    <div class="body-img">
+                        <img src="IMMAGINI PROGETTO/Roma 2.jpeg" alt="Mia immagine">
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-md-6 col-sm-12">
+                <h2>I nostri Allogi</h2>
+                <p>Roma, città eterna e affascinante, accoglie i suoi visitatori con un ventaglio di soluzioni abitative per ogni gusto e budget.<br> Dagli ostelli economici ai lussuosi hotel a cinque stelle, dalle case vacanza immerse nella natura agli appartamenti moderni nel cuore della città, Roma offre un'esperienza su misura per ogni viaggiatore.
+
+                    Per chi desidera immergersi nell'atmosfera bohémien della città, Trastevere rappresenta la scelta ideale. Tra vicoli pittoreschi, ristoranti tipici e locali animati, si trovano appartamenti a prezzi accessibili che permettono di vivere l'autentico spirito romano.</p>
+                <div class="d-flex justify-content-center my-5">
+                    <a id= button href="Alloggi.html" class="btn btn-outline-warning">Alloggi</a>
+                </div>
+            </div>
+        </div>
+<br>
+<!--sezione come arrivare-->
+          <div class="col-md-12">
+             <h2>Come arrivare</h2>
+             <ul>
+               <li>Treno</li>
+               <p> Il treno è uno dei migliori mezzi di trasporto per raggiungere comodamente Roma dalle varie città italiane. La rete ferroviaria nazionale dispone di differenti tipi di treni, con maggiore o minore frequenza oraria e con diverso piano tariffario. </p>
+               <li>Aereo</li>
+               <p>Roma dispone di due aeroporti internazionali che ogni anno accolgono più di 40 milioni di viaggiatori: l'aeroporto di Fiumicino e quello di Ciampino. L'ascesa delle compagnie low-cost ha fomentato il traffico aereo verso Roma e permette di raggiungere la nostra capitale con meno di 50€. </p>
+               <li>Autobus</li>
+               <p>Da numerose città italiane si può raggiungere Roma in autobus, con capolinea nella stazione Anagnina o Tiburtina. Dal Meridione partono verso Roma le linee della Marozzi e della Moretti, mentre dalle città del Nord si possono prenotare i pullman di compagnie come Baltour o Flixbus</p>
+             </ul>
+           </div>
+          <div class="col-md-12" >
+                <div class="mapp">     
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190028.35442537547!2d12.371187906461062!3d41.91020879226684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRoma%20RM!5e0!3m2!1sit!2sit!4v1720444941702!5m2!1sit!2sit"  width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>         
+                </div>
+           </div>
+        
+    </div>
+      
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<br>
+<!--footer-->
+<footer class="footer w-100" style="font-family: Poppins, sans-serif;  ">
+    <br>
+    <br>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <h3>La Nostra Azienda</h3>
+                <br>
+                <p>Tour Calypso S.R.L.S</p>
+                <p><strong>Roma</strong> , Via dei Cerchi 17, 00186</p>
+                <p><strong>Partita IVA: </strong>03842567922</p>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <h3>Contatti</h3>
+                <br>
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-facebook-500.png" alt="Facebook">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-instagram-500.png" alt="Instagram">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-twitterx-500.png" alt="Twitter">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-youtube-logo-500.png" alt="Youtube">
+                </a>
+                <br>
+                <br>
+                <a class="telefono" href="#">
+                    <img src="IMMAGINI PROGETTO/telefono.png" alt="telefono">
+                    <span> +39 586 718 8296</span>
+                </a>
+                <br>
+                <br>
+                <a class="email" href="#">
+                    <img src="IMMAGINI PROGETTO/email.png" alt="email">
+                    <span> calypsotour@pec.it</span>
+                </a>
+
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="linkbut">
+                    <h3>Link Utili</h3>
+                    <br>
+                    <a href="./Home.html">Home</a>
+                    <br>
+                    <br>
+                    <a href="./ChiSiamo.html">Chi siamo</a>
+                    <br>
+                    <br>
+                    <a href="#">Servizi</a>
+                    <br>
+                    <br>
+                    <a href="#">Contatti</a>
+                    <br>
+                    <br>
+                    <a href="#">Metodi di Pagamento</a>
+                    <br>
+                    <br>
+                    <a href="#">Bagaglio</a>
+                    <br>
+                    <br>
+                    <a href="#">Assicurazioni</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="linkbut">
+                    <h3>Calypso World</h3>
+                    <br>
+                    <a href="#">Lavora con Noi</a>
+                    <br>
+                    <br>
+                    <a href="#">Il Gruppo</a>
+                    <br>
+                    <br>
+                    <a href="./Accedi.html">Area Riservata</a>
+                    <br>
+                    <br>
+                    <a href="#">Convenzioni</a>
+                    <br>
+                    <br>
+                    <a href="#">Escursioni</a>
+                    <br>
+                    <br>
+                    <a href="#">FAQ</a>
+                    <br>
+                    <br>
+                    <a href="#">Guida per gli Utenti</a>
+                    <br>
+                    <br>
+                    <a href="#">Guida per i Gestori</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</footer>  
+
+        
+</html>

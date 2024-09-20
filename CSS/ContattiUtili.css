@@ -1,0 +1,93 @@
+.image img {
+    width: 200 !important;
+    height: 100 !important;
+}
+
+.nav li {
+    padding-right: 50px;
+    font-size: x-large;
+    color: #2e92a9;
+}
+
+.nav a {
+    color: #2e92a9;
+}
+
+.body {
+    background-color: white !important;
+}
+
+.carousel-caption {
+    margin-bottom: 5%;
+}
+
+.carousel-inner h5 {
+    font-size: 80px;
+    color: black;
+}
+
+.carousel-inner p {
+    font-size: 40px;
+    color: black;
+}
+
+
+.footer {
+    color: white;
+    margin-top: 80px;
+    background-color: #366880;
+    background-size: 2000px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.footer .row {
+    border-style: none !important;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 70px !important;
+}
+
+
+
+.titolo {
+    margin-top: 2%;
+    border: solid #386c84;
+    border-radius: 20px;
+    padding-bottom: 2%;
+}
+
+#riga1 {
+    margin-top: 2%;
+}
+.card {
+    border-style: solid;
+    border-color: #2e92a9;
+    border-width: medium;
+}
+
+.card-body a:hover {
+    color: white !important;
+    background-color: #2e92a9 !important;
+}
+.card-title {
+    color: #2e92a9;
+ 
+}
+
+.card-text {
+    color: black;
+}
+
+h1 {
+    margin: 5%;
+    text-align: center;
+}

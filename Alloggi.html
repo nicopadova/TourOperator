@@ -1,0 +1,627 @@
+
+
+<html>
+<head>
+    <title>
+        Alloggi
+    </title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="CSS/Alloggi.css">
+</head>
+
+<body style="font-family: Poppins, sans-serif;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiar" style="background-color: #f4f4f4;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img src="IMMAGINI PROGETTO/png-clipart-tour-operator-logo-tours-graphic-design-egipto-paquetes-de-vacaciones-tour-operator-logo.png"
+                    alt="Logo" width="200" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Chi Siamo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ChiSiamo.html">La Nostra Storia</a></li>
+                            <li><a class="dropdown-item" href="ContattiUtili.html">Contatti</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Destinazioni
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="destinazioni.html">Accedi a tutte le Destinazioni</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Alloggi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Alloggi.html">Hotel</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Offerte
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pacchetti.html">Pacchetti</a></li>
+                            <li><a class="dropdown-item" href="LastMinute.html">Last Minute</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Preventivo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Preventivatore.html">Richiedi un Preventivo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="dropdown" style="margin-right: 10px;">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="IMMAGINI PROGETTO/user-profile-icon-free-vector.png" alt="user" width="50"
+                            height="50">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Accedi.html">Accedi</a></li>
+                        <li><a class="dropdown-item" href="Registrati.html">Registrati</a></li>
+                    </ul>
+                </div>
+                <br>
+                <form class="d-flex" role="search" style="margin-top: 12px;">
+                    <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                    <button class="btn btn-outline-primary" type="submit"
+                        style="border-color: #2e92a9; ">Cerca</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="shadow border-top pt-1" aria-label="breadcrumb" style="background-color: #f4f4f4;">
+        <div class="container-fluid ps-0 ms-0">
+            <ol class="breadcrumb mb-0 ms-2 ps-1 pb-1">
+                <li class="breadcrumb-item"><a href="./Home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Alloggi</li>
+            </ol>
+        </div>
+    </nav>
+    <!--Contenuto-->
+
+    <!--Copertina -->
+    <div class="container-fluid text-center position-relative destinazione-copertina px-0">
+        <img id=copertina-img class="img-fluid" src="./IMMAGINI PROGETTO/copertina-alloggi.jpg">
+        <h1 id="copertina-testo" class="position-absolute top-50 start-50 translate-middle p-2 rounded shadow">Alloggi </h1>
+    </div>
+ 
+    <br>
+    <!--Inizio Filtri-->
+
+    <div class="filtri w-50" style="margin-left: 25%; margin-right: 25%;">
+
+        <h5>Filtri</h5>
+        
+        <div class="container text-center">
+            <div class="row my-2" id="fil"> <!--STELLE-->
+                <div class="col d-flex flex-wrap justify-content-around ps-2 pe-0">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">1 Stella</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">2 Stelle</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">3 Stelle </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                        <label class="form-check-label" for="inlineCheckbox3">4 Stelle </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                        <label class="form-check-label" for="inlineCheckbox3">5 Stelle </label>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container text-center">
+            <div class="row my-2" id="fil1"> <!--TIPOLOGIA-->
+                <div class="col d-flex flex-row justify-content-around ps-2 pe-0">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                        <label class="form-check-label" for="inlineCheckbox3">Solo Pernottamento</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                        <label class="form-check-label" for="inlineCheckbox3">Pernottamento e Prima Colazione
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+                        <label class="form-check-label" for="inlineCheckbox3">Mezza Pensione </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Inizio codice per ogni card-->
+
+    <h2>Hotel a Roma </h2>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/Hassler-Roma-Alloggi.jpg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Hassler Roma</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Piazza Trinità dei Monti, 6<br>
+                            <strong>Posizione:</strong> Roma, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/Cavalieri-Roma-Alloggi.jpg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Rome Cavalieri</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 5 stelle <br>
+                            <strong>Indirizzo</strong> Via Alberto Cadlolo, 101<br>
+                            <strong>Posizione:</strong> Roma, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/Artemide-Roma-Alloggi.jpg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Artemide</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Via Nazionale, 22<br>
+                            <strong>Posizione:</strong> Roma, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/Augustus-Roma-Alloggi.jpg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Augustus</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Via Veneto, 45<br>
+                            <strong>Posizione:</strong> Roma, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, spa, palestra
+                            <br>
+                            <strong>Prezzo:</strong> €140 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Hotel A Palermo</h2>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/Serenissima-Palermo-Alloggi.jpg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Serenissima</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Via Roma, 100<br>
+                            <strong>Posizione:</strong> Palermo, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/Palatium-Palermo-Alloggi.jpg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Palatium</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 5 stelle <br>
+                            <strong>Indirizzo</strong>Via Maqueda, 50<br>
+                            <strong>Posizione:</strong> Palermo, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/Centrale-Palermo-Alloggi.jpg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Centrale</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Via Libertà, 150<br>
+                            <strong>Posizione:</strong> Palermo, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/Bellavista-Palermo-Alloggi.jpg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Bellavista</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Via Vittorio Emanuele, 80<br>
+                            <strong>Posizione:</strong> Palermo, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, spa, palestra
+                            <br>
+                            <strong>Prezzo:</strong> €140 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Hotel a Cagliari </h2>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/hotelCA1.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Hassler Cagliari</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Piazza Trinità dei Monti, 6<br>
+                            <strong>Posizione:</strong> Cagliri, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/hotelCA2.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">T-Hotel Cagliari</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 5 stelle <br>
+                            <strong>Indirizzo</strong> Via Alberto Cadlolo, 101<br>
+                            <strong>Posizione:</strong> Cagliari, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/hotelCA3.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Artemide</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Via Nazionale, 22<br>
+                            <strong>Posizione:</strong> Cagliari, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/hotelCa4.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Augustus</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Via Veneto, 45<br>
+                            <strong>Posizione:</strong> Cagliari, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, spa, palestra
+                            <br>
+                            <strong>Prezzo:</strong> €140 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Hotel A Firenze</h2>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/hotelFi4.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Giunti</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Via Roma, 100<br>
+                            <strong>Posizione:</strong> Firenze, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/hotelFI2.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Hilton</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 5 stelle <br>
+                            <strong>Indirizzo</strong>Via Maqueda, 50<br>
+                            <strong>Posizione:</strong> Firenze, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/hotelFI3.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Centrale</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Via Libertà, 150<br>
+                            <strong>Posizione:</strong> Firenze, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/hotelFI1.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Luxor</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Via Vittorio Emanuele, 80<br>
+                            <strong>Posizione:</strong> Firenze, Italia <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, spa, palestra
+                            <br>
+                            <strong>Prezzo:</strong> €140 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Hotel A Los Angeles</h2>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/HotelLA.1.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Calipso</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Madison st., 100<br>
+                            <strong>Posizione:</strong> Los Angeles, USA<br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/HotelLA.3.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Hilton</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 5 stelle <br>
+                            <strong>Indirizzo</strong>Lincoln Park, 50<br>
+                            <strong>Posizione:</strong> Los Angeles, USA<br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/HotelLA.2.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Central</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Canteburry st., 150<br>
+                            <strong>Posizione:</strong> Los Angeles, USA <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, palestra <br>
+                            <strong>Prezzo:</strong> €120 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-12 col-xl-3">
+                <div class="card">
+                    <img src="./IMMAGINI PROGETTO/HotelLA.4.jpeg" class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Luxor</h5>
+                        <p class="card-text"><strong>Tipo:</strong> Hotel 4 stelle <br>
+                            <strong>Indirizzo</strong> Madison square, 80<br>
+                            <strong>Posizione:</strong> Los Angeles, USA <br>
+                            <strong>Caratteristiche:</strong> Wi-Fi gratuito, colazione inclusa, piscina, spa, palestra
+                            <br>
+                            <strong>Prezzo:</strong> €140 a notte
+                        </p>
+                        <a href="#" class="btn">Prenota</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+<br>
+<footer class="footer w-100" style="font-family: Poppins, sans-serif;  ">
+    <br>
+    <br>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <h3>La Nostra Azienda</h3>
+                <br>
+                <p>Tour Calypso S.R.L.S</p>
+                <p><strong>Roma</strong> , Via dei Cerchi 17, 00186</p>
+                <p><strong>Partita IVA: </strong>03842567922</p>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <h3>Contatti</h3>
+                <br>
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-facebook-500.png" alt="Facebook">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-instagram-500.png" alt="Instagram">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-twitterx-500.png" alt="Twitter">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-youtube-logo-500.png" alt="Youtube">
+                </a>
+                <br>
+                <br>
+                <a class="telefono" href="#">
+                    <img src="IMMAGINI PROGETTO/telefono.png" alt="telefono">
+                    <span> +39 586 718 8296</span>
+                </a>
+                <br>
+                <br>
+                <a class="email" href="#">
+                    <img src="IMMAGINI PROGETTO/email.png" alt="email">
+                    <span> calypsotour@pec.it</span>
+                </a>
+
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="linkbut">
+                    <h3>Link Utili</h3>
+                    <br>
+                    <a href="./Home.html">Home</a>
+                    <br>
+                    <br>
+                    <a href="./ChiSiamo.html">Chi siamo</a>
+                    <br>
+                    <br>
+                    <a href="#">Servizi</a>
+                    <br>
+                    <br>
+                    <a href="#">Contatti</a>
+                    <br>
+                    <br>
+                    <a href="#">Metodi di Pagamento</a>
+                    <br>
+                    <br>
+                    <a href="#">Bagaglio</a>
+                    <br>
+                    <br>
+                    <a href="#">Assicurazioni</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="linkbut">
+                    <h3>Calypso World</h3>
+                    <br>
+                    <a href="#">Lavora con Noi</a>
+                    <br>
+                    <br>
+                    <a href="#">Il Gruppo</a>
+                    <br>
+                    <br>
+                    <a href="./Accedi.html">Area Riservata</a>
+                    <br>
+                    <br>
+                    <a href="#">Convenzioni</a>
+                    <br>
+                    <br>
+                    <a href="#">Escursioni</a>
+                    <br>
+                    <br>
+                    <a href="#">FAQ</a>
+                    <br>
+                    <br>
+                    <a href="#">Guida per gli Utenti</a>
+                    <br>
+                    <br>
+                    <a href="#">Guida per i Gestori</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</footer>  
+
+</html>

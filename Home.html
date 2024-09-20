@@ -1,0 +1,839 @@
+<html>
+
+<head>
+    <title>
+        Home
+    </title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Home.css">
+</head>
+
+<body class="body" style="font-family: Poppins, sans-serif;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiar" style="background-color: #f4f4f4;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="file:///C:/Users/gabry/Desktop/Tour%20Operator/Home.html">
+                <img src="IMMAGINI PROGETTO/png-clipart-tour-operator-logo-tours-graphic-design-egipto-paquetes-de-vacaciones-tour-operator-logo.png"
+                    alt="Logo" width="200" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Chi Siamo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="file:///C:/Users/gabry/Desktop/Tour%20Operator/ChiSiamo.html">La Nostra
+                                    Storia</a></li>
+                            <li><a class="dropdown-item" href="ContattiUtili.html">Contatti</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Destinazioni
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="destinazioni.html">Accedi a tutte le Destinazioni</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Alloggi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Alloggi.html">Hotel</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Offerte
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pacchetti.html">Pacchetti</a></li>
+                            <li><a class="dropdown-item" href="LastMinute.html">Last Minute</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Preventivo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Preventivatore.html">Richiedi un Preventivo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="dropdown" style="margin-right: 10px;">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="IMMAGINI PROGETTO/user-profile-icon-free-vector.png" alt="user" width="50"
+                            height="50">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Accedi.html">Accedi</a></li>
+                        <li><a class="dropdown-item" href="Registrati.html">Registrati</a></li>
+                    </ul>
+                </div>
+                <br>
+                <form class="d-flex" role="search" style="margin-top: 25px;">
+
+                    <div class="input-group my-2">
+                        <input type="text" class="form-control" id="searchbar" placeholder="Cerca prodotti..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <button class="btn btn-primary" type="button" id="button-addon1" onclick="cerca()">Cerca</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="IMMAGINI PROGETTO/99.jpg" class="d-block w-100" alt="Nilo" style="opacity: 0.8;">
+                <div class="carousel-caption d-md-block">
+                    <h5>Crociera sul Nilo</h5>
+                    <p>Alla scoperta dell'antico Egitto.</p>
+                    <a class="btn btn-primary" href="Preventivatore.html" role="button"
+                        style="background-color: white; color: #2e92a9;">Prenota qui</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="IMMAGINI PROGETTO/Summer-Vacation.jpg" class="d-block w-100" alt="Vacanze"
+                    style="opacity: 0.8;">
+                <div class="carousel-caption d-md-block">
+                    <h5>Estate e Mare</h5>
+                    <p>Le mete migliori per la tua Estate</p>
+                    <a class="btn btn-primary" href="destinazioni.html" role="button"
+                        style="background-color: white; color: #2e92a9;">Inizia qui</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="IMMAGINI PROGETTO/cosa-vedere-dubai-1.jpeg" class="d-block w-100" alt="Barcellona"
+                    style="opacity: 0.7;">
+                <div class="carousel-caption d-md-block">
+                    <h5>Un sogno a Dubai</h5>
+                    <p>Goditi la città delle meraviglie.</p>
+                    <a class="btn btn-primary" href="pacchetti.html" role="button"
+                        style="background-color: white; color: #2e92a9;">Parti subito</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5 text-center">
+        <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-1 row-cols-1 justify-content-lg-center">
+            <div class="col col-lg-auto">
+                <br>
+                <div class="modbutton4">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalToggle">Destinazioni</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-center w-100" id="exampleModalToggleLabel">Partenze</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modalform">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="validationFormCheck" value="option1" required>
+                                        <label class="form-check-label" for="validationFormCheck">FRANCIA</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck2" value="option2" required>
+                                        <label class="form-check-label" for="validationFormCheck2">ITALIA</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck3" value="option3" required>
+                                        <label class="form-check-label" for="validationFormCheck3">REGNO UNITO</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck4" value="option4" required>
+                                        <label class="form-check-label" for="validationFormCheck4">SPAGNA
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck5" value="option5" required>
+                                        <label class="form-check-label" for="validationFormCheck5">GERMANIA</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck6" value="option6" required>
+                                        <label class="form-check-label" for="validationFormCheck6">PAESI BASSI</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck7" value="option7" required>
+                                        <label class="form-check-label" for="validationFormCheck7">REPUBBLICA
+                                            CECA</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck8" value="option8" required>
+                                        <label class="form-check-label" for="validationFormCheck8">GIAPPONE</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck9" value="option9" required>
+                                        <label class="form-check-label" for="validationFormCheck9">THAILANDIA</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck10" value="option10" required>
+                                        <label class="form-check-label" for="validationFormCheck10">INDONESIA</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck11" value="option11" required>
+                                        <label class="form-check-label" for="validationFormCheck11">CINA</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck12" value="option12" required>
+                                        <label class="form-check-label" for="validationFormCheck12">SINGAPORE</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck13" value="option13" required>
+                                        <label class="form-check-label" for="validationFormCheck13">COREA DEL
+                                            SUD</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck13" value="option13" required>
+                                        <label class="form-check-label" for="validationFormCheck13">STATI UNITI</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck14" value="option14" required>
+                                        <label class="form-check-label" for="validationFormCheck14">CANADA</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck15" value="option15" required>
+                                        <label class="form-check-label" for="validationFormCheck15">BRASILE</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck16" value="option16" required>
+                                        <label class="form-check-label" for="validationFormCheck16">MESSICO</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="radio-stacked"
+                                            id="validationFormCheck17" value="option17" required>
+                                        <label class="form-check-label" for="validationFormCheck17">ARGENTINA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                <button type="submit" value="Submit" class="btn btn-primary"
+                                    data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Continua</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-auto">
+                <br>
+                <div class="modbutton">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalToggle2">Tipologia</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-center w-100" id="exampleModalToggleLabel2">Partenze</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modalform">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1" required>
+                                        <label class="form-check-label" for="inlineRadio1">BERGAMO (BGY)</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2" required>
+                                        <label class="form-check-label" for="inlineRadio2">CATANIA (CTA)</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio3" value="option3" required>
+                                        <label class="form-check-label" for="inlineRadio3">ROMA FIUMICINO
+                                            (FCO)</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio3" value="option3" required>
+                                        <label class="form-check-label" for="inlineRadio4">MILANO MALPENSA (MXP)
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio3" value="option3" required>
+                                        <label class="form-check-label" for="inlineRadio5">NAPOLI (NAP)</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio6" value="option6" required>
+                                        <label class="form-check-label" for="inlineRadio6">VERONA (VRN)</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio7" value="option7" required>
+                                        <label class="form-check-label" for="inlineRadio7">CAGLIARI (CA)</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio8" value="option8" required>
+                                        <label class="form-check-label" for="inlineRadio8">PISA (PSA)</label>
+                                    </div>
+                                    <div class="form-check form-check-inline" style="margin-top: 15px;">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio9" value="option9" required>
+                                        <label class="form-check-label" for="inlineRadio9">PALERMO (PMO)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">Indietro</button>
+                                <button class="btn btn-primary" type="submit" value="Submit"
+                                    data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Continua</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-auto">
+                <br>
+                <div class="modbutton2">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalToggle3">
+                        Ospiti
+                    </button>
+                </div>
+                <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-center w-100" id="exampleModalToggleLabel3">Quanti siete?
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Adulti:</label>
+                                        <input type="number" class="form-control" id="recipient-number" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Bambini:</label>
+                                        <input type="number" class="form-control" id="recipient-number" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Camere:</label>
+                                        <input type="number" class="form-control" id="recipient-number" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Indietro</button>
+                                <button type="submit" value="Submit" class="btn btn-primary"
+                                    data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Continua</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-auto">
+                <br>
+                <div class="modbutton3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalToggle4">
+                        Periodo
+                    </button>
+                </div>
+                <div class="modal fade" id="exampleModalToggle4" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-center w-100" id="exampleModalToggleLabel4">Qando Parti?
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Partenza:</label>
+                                        <input type="date" class="form-control" id="recipient-date">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Arrivo:</label>
+                                        <input type="date" class="form-control" id="recipient-date">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle3"
+                                    data-bs-toggle="modal">Indietro</button>
+                                    <a class="btn btn-primary" href="destinazioni.html" role="button">Cerca</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h1 style="text-align: center;">Scopri le Nostre Migliori Offerte</h1>
+    <br>
+    <br>
+    <div class="container mt-5">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 row-cols-1">
+            <div class="col">
+                <div class="card">
+                    <img src="IMMAGINI PROGETTO/egypt.jpg" class="card-img" alt="..." height="400px"
+                        style="opacity: 0.8;">
+                    <div class="card-img-overlay">
+                        <h1 class="card-title" style="color: black;">Egitto</h1>
+                        <a href="#"
+                            style="display: flex; justify-content: flex-end; align-content: flex-end; color: black; text-decoration: none;">Scopri
+                            le Nostre offerte</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col">
+                <div class="card">
+                    <img src="IMMAGINI PROGETTO/woman-traveler-explores-ruins-ancient-260nw-2141122581.jpeg"
+                        class="card-img-top" alt="..." >
+                    <div class="card-body">
+                        <h5 class="card-title">I Tesori del Nilo</h5>
+                        <p>EGITTO - CROCIERE SUL NILO</p>
+                        <p>02 Set 24 » 09 Set 24 (7 Notti)</p>
+                        <p>Voli Da Milano Malpensa (Mxp)</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="container mt-5">
+                            <div class="row row-cols-lg-2">
+                                <div class="col">
+                                    <h5>€1.524/ persona</h5>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" href="#" role="button">Scopri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col">
+                <div class="card">
+                    <img src="IMMAGINI PROGETTO/tour egypt.png" class="card-img-top" alt="..." height="170px">
+                    <div class="card-body">
+                        <h5 class="card-title">Voyager Amon</h5>
+                        <p>EGITTO - CROCIERE SUL NILO</p>
+                        <p>26 Ago 24 » 02 Set 24 (7 Notti)</p>
+                        <p>Voli Da Milano Malpensa (Mxp)</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="container mt-5">
+                            <div class="row row-cols-lg-2">
+                                <div class="col">
+                                    <h5>€2.113/ persona</h5>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" href="#" role="button">Scopri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col">
+                <div class="card">
+                    <img src="IMMAGINI PROGETTO/river-nile-egypt-scaled.jpeg" class="card-img-top" alt="..."
+                        height="170px">
+                    <div class="card-body">
+                        <h5 class="card-title">Voyager Sobek</h5>
+                        <p>EGITTO - CROCIERE SUL NILO</p>
+                        <p>29 Lug 24 » 05 Ago 24 (7 Notti)</p>
+                        <p>Voli Da Roma Fiumicino (Fco)</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="container mt-5">
+                            <div class="row row-cols-lg-2">
+                                <div class="col">
+                                    <h5>€1.709/persona</h5>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" href="#" role="button">Scopri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
+            <div class="col">
+                <div class="card">
+                    <img src="IMMAGINI PROGETTO/cuba.jpg" class="card-img" alt="..." height="400px"
+                        style="opacity: 0.8;">
+                    <div class="card-img-overlay">
+                        <h2 class="card-title" style="color: black;">Cuba</h2>
+                        <a href="#"
+                            style="display: flex; justify-content: flex-end; align-content: flex-end; color: black; text-decoration: none;">Scopri
+                            le Nostre offerte</a>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col">
+                <div class="card">
+                    <img src="IMMAGINI PROGETTO/cuba2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Magic Isla Grande</h5>
+                        <p>CUBA - TOUR CUBA</p>
+                        <p>29 Lug 24 » 05 Ago 24 (7 Notti)</p>
+                        <p>Voli Da Milano Malpensa (Mxp)</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="container mt-5">
+                            <div class="row row-cols-lg-2">
+                                <div class="col">
+                                    <h5>€1.604/ persona</h5>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" href="#" role="button">Scopri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col">
+                <div class="card">
+                    <img src="IMMAGINI PROGETTO/cuba3" class="card-img-top" alt="..." height="170px">
+                    <div class="card-body">
+                        <h5 class="card-title">Tour Chiave Del Golfo</h5>
+
+                        <p>CUBA - TOUR CUBA</p>
+                        <p>29 Lug 24 » 05 Ago 24 (7 Notti)</p>
+                        <p>Voli Da Milano Malpensa (Mxp)</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="container mt-5">
+                            <div class="row row-cols-lg-2">
+                                <div class="col">
+                                    <h5>€1.833/ persona
+                                    </h5>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" href="#" role="button">Scopri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col">
+                <div class="card">
+                    <img src="IMMAGINI PROGETTO/cuba4.jpg" class="card-img-top" alt="..." height="170px">
+                    <div class="card-body">
+                        <h5 class="card-title">Old Havana</h5>
+                        <p>CUBA - TOUR CUBA</p>
+                        <p>24 Lug 24 » 08 Ago 24 (14 notti)</p>
+                        <p>Voli Da Roma Fiumicino (Fco)</p>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="container mt-5">
+                            <div class="row row-cols-lg-2">
+                                <div class="col">
+                                    <h5>€3.835/persona</h5>
+                                </div>
+                                <div class="col">
+                                    <a class="btn btn-primary" href="#" role="button">Scopri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h1 style="text-align: center;">Perché scegliere Calypso Tour</h1>
+    <br>
+    <br>
+    <div class="row row-cols-1  row cols-md-1 row-cols-lg-2 g-4"
+        style="display: flex; justify-content: center; margin-left: 10px;">
+        <div class="col">
+            <div class="card mb-3" style="max-width: 700px; border-color: #2e92a9; border-style: solid;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="IMMAGINI PROGETTO/vacation" class="img-fluid rounded-start" alt="..."
+                            style="height: 325px; width: 600px;">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">L'animazione</h5>
+                            <p class="card-text">Riempire le vostre serate con altre esperienze indimenticabili è da
+                                sempre parte dei nostri programmi. Per questo portiamo sui nostri palcoscenici vera
+                                gente di spettacolo e affidiamo l’animazione per i più piccoli a professionisti esperti.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3" style="max-width: 700px; border-color: #2e92a9; border-style: solid;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="IMMAGINI PROGETTO/pexels-te-lensfix-380994-1371360.jpg"
+                            class="img-fluid rounded-start" alt="..." style="height: 325px; width: 600px;">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">I tour più belli</h5>
+                            <p class="card-text">Luoghi e itinerari che sono diventati classici del viaggio, esperienze
+                                uniche e intense che sono entrate a far parte dei ricordi di più generazioni di
+                                viaggiatori. Curati in ogni dettaglio e costantemente migliorati.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3" style="max-width: 700px; border-color: #2e92a9; border-style: solid;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="IMMAGINI PROGETTO/vacation2.jpg" class="img-fluid rounded-start" alt="..."
+                            style="height: 325px; width: 600px;">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Voli e hotel selezionati</h5>
+                            <p class="card-text">Qui troverai le migliori combinazioni di volo e hotel che fanno al caso
+                                tuo. Le valutazioni dei nostri esperti ti aiuteranno a scegliere..</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3" style="max-width: 700px; border-color: #2e92a9; border-style: solid;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="IMMAGINI PROGETTO/vacation4.jpg" class="img-fluid rounded-start" alt="..."
+                            style="height: 325px; width: 600px;">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">Prezzi leggeri e trasparenti</h5>
+                            <p class="card-text">La sezione dedicata alle offerte suddivise per budget. Qui tantissime
+                                proposte, low cost e non, che soddisfano qualsiasi portafoglio. .</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/Home.js"></script>
+</body>
+<br>
+
+<footer class="footer w-100" style="font-family: Poppins, sans-serif;  ">
+    
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <br>
+                <br>
+                <h3>La Nostra Azienda</h3>
+                <br>
+                <p>Tour Calypso S.R.L.S</p>
+                <p><strong>Roma</strong> , Via dei Cerchi 17, 00186</p>
+                <p><strong>Partita IVA: </strong>03842567922</p>
+
+            </div>
+            <br>
+            <br>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <br>
+                <br>
+                <h3>Contatti</h3>
+                <br>
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-facebook-500.png" alt="Facebook">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-instagram-500.png" alt="Instagram">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-twitterx-500.png" alt="Twitter">
+                </a>
+
+                <a href="#">
+                    <img src="IMMAGINI PROGETTO/icons8-youtube-logo-500.png" alt="Youtube">
+                </a>
+                <br>
+                <br>
+                <a class="telefono" href="#">
+                    <img src="IMMAGINI PROGETTO/telefono.png" alt="telefono">
+                    <span> +39 586 718 8296</span>
+                </a>
+                <br>
+                <br>
+                <a class="email" href="#">
+                    <img src="IMMAGINI PROGETTO/email.png" alt="email">
+                    <span> calypsotour@pec.it</span>
+                </a>
+            </div>
+            <br>
+            <br>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="linkbut">
+                    <br>
+                    <br>
+                    <h3>Link Utili</h3>
+                    <br>
+                    <a href="#">Home</a>
+                    <br>
+                    <br>
+                    <a href="#">Chi siamo</a>
+                    <br>
+                    <br>
+                    <a href="#">Servizi</a>
+                    <br>
+                    <br>
+                    <a href="#">Contatti</a>
+                    <br>
+                    <br>
+                    <a href="#">Metodi di Pagamento</a>
+                    <br>
+                    <br>
+                    <a href="#">Bagaglio</a>
+                    <br>
+                    <br>
+                    <a href="#">Assicurazioni</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="linkbut">
+                    <br>
+                    <br>
+                    <h3>Calypso World</h3>
+                    <br>
+                    <a href="#">Lavora con Noi</a>
+                    <br>
+                    <br>
+                    <a href="#">Il Gruppo</a>
+                    <br>
+                    <br>
+                    <a href="#">Area Riservata</a>
+                    <br>
+                    <br>
+                    <a href="#">Convenzioni</a>
+                    <br>
+                    <br>
+                    <a href="#">Escursioni</a>
+                    <br>
+                    <br>
+                    <a href="#">FAQ</a>
+                    <br>
+                    <br>
+                    <a href="#">Guida per gli Utenti</a>
+                    <br>
+                    <br>
+                    <a href="#">Guida per i Gestori</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+</html>

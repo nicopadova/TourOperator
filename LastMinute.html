@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Last-Minute</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--BOOTSTRAP CSS-->
+        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+        <!--FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+     
+
+
+            .last-minute-text {
+                background-color: #add9e7;
+            }
+            #copertina-img {
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+                opacity: 0.8; 
+                }
+            #copertina-testo {
+                margin-top: -150px; /* Sposta il testo di 50 pixel verso l'alto */
+             }
+
+            .hidden {
+                display: none;
+            }
+            h1 {
+                font-size: 80px;
+                color: black;
+                text-align: start;
+                
+            }
+
+            h2 {
+                padding-top: 2%;
+                padding-bottom: 2%;
+                text-align: center;
+                color: #2596be;
+            }
+
+            .zone {
+                padding-left: 10%;
+            }
+
+            .accordion-collapse {
+                background-color: #add9e7;
+            }
+
+            .info:hover {
+                border-style: solid;
+                border-width: 2px;
+                border-color: #FBD26C;
+                text-decoration: underline;
+            }
+
+            /*FOOTER*/
+            .footer {
+                color: white;
+                margin-top: 80px;
+                background-color: #366880;
+                background-size: 2000px;
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+
+            }
+
+            .footer img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .footer a {
+                color: white;
+                text-decoration: none;
+                margin-bottom: 70px !important;
+            }
+        </style>
+    </head>
+    <body style="font-family: Poppins, sans-serif;">
+        <!--HEADER-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiar" style="background-color: #f4f4f4;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html">
+            <img src="IMMAGINI PROGETTO/png-clipart-tour-operator-logo-tours-graphic-design-egipto-paquetes-de-vacaciones-tour-operator-logo.png"
+                alt="Logo" width="200" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Chi Siamo
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="ChiSiamo.html">La Nostra Storia</a></li>
+                        <li><a class="dropdown-item" href="ContattiUtili.html">Contatti</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Destinazioni
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="destinazioni.html">Accedi a tutte le Destinazioni</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Alloggi
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Alloggi.html">Hotel</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Offerte
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="pacchetti.html">Pacchetti</a></li>
+                        <li><a class="dropdown-item" href="LastMinute.html">Last Minute</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Preventivo
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Preventivatore.html">Richiedi un Preventivo</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="dropdown" style="margin-right: 10px;">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="IMMAGINI PROGETTO/user-profile-icon-free-vector.png" alt="user" width="50"
+                        height="50">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Accedi.html">Accedi</a></li>
+                    <li><a class="dropdown-item" href="Registrati.html">Registrati</a></li>
+                </ul>
+            </div>
+            <br>
+            <form class="d-flex" role="search" style="margin-top: 12px;">
+                <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                <button class="btn btn-outline-primary" type="submit"
+                    style="border-color: #2e92a9; ">Cerca</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<nav class="shadow border-top pt-1" aria-label="breadcrumb" style="background-color: #f4f4f4;">
+    <div class="container-fluid ps-0 ms-0">
+        <ol class="breadcrumb mb-0 ms-2 ps-1 pb-1">
+            <li class="breadcrumb-item"><a href="./Home.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Last-Minute</li>
+        </ol>
+    </div>
+</nav>
+        <!--FINE HEADER-->
+        <!--COPERTINA-->
+        <div class="container-fluid text-center position-relative last-minute-copertina px-0">
+            <img class="img-fluid" src="./IMMAGINI PROGETTO/Copertina_Last_Minute.jpg">
+            <h1 id="copertina-testo" class="position-absolute top-50 start-50 translate-middle p-2 rounded shadow">Le nostre offerte Last Minute!</h1>
+        </div>
+        
+        <!--OFFERTE-->
+        <ul class="nav nav-tabs mt-3 zone">
+            <li class="nav-item">
+                <a class="nav-link active pag offerte_Ita position-relative" aria-current="page" onclick="cambiaPagina('offerte_Ita')">Italia<span class="badge text-bg-danger position-absolute top-0 start-100 translate-middle rounded">New</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pag offerte_Eu position-relative" onclick="cambiaPagina('offerte_Eu')">Europa<span class="badge text-bg-danger position-absolute top-0 start-100 translate-middle rounded">New</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pag offerte_Ame position-relative" onclick="cambiaPagina('offerte_Ame')">America<span class="badge text-bg-danger position-absolute top-0 start-100 translate-middle rounded">New</span></a>
+            </li>
+        </ul>
+        <div class="container offerte" id="offerte_Ita">
+            <div class="row px-5">
+                <div class="col-12 text-center py-2"> <!--TITOLO-->
+                    <h2>Offerte Last Minute in Italia!</h2>
+                </div>
+                <div class="col-12"> <!--BODY OFFERTE-->
+                    <!--SARDEGNA, SICILIA E VENEZIA-->
+                    <div class="accordion shadow" id="accordionExample">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Sardegna
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row text-center">
+                                        <div class="col-12 col-md-6">
+                                            <img src="./IMMAGINI PROGETTO/Sardegna_last-minute.jpg" class="w-75 rounded">
+                                        </div>
+                                        <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                            <p>Prenota ora e parti entro 30 giorni per un fantastico viaggio in <strong>Sardegna</strong>. Scopri questa terra magnifica insieme a noi!</p>
+                                            <h6 class="mt-4">PRENOTA ORA!</h6>
+                                            <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Sicilia
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row text-center" >
+                                        <div class="col-12 col-md-6">
+                                            <img src="./IMMAGINI PROGETTO/Sicilia_last-minute.jpg" class="w-75 rounded">
+                                        </div>
+                                        <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                            <p>Prenota ora e parti entro 30 giorni per un fantastico viaggio in <strong>Sicilia</strong>. Scopri questa terra magnifica insieme a noi!</p>
+                                            <h6 class="mt-4">PRENOTA ORA!</h6>
+                                            <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Venezia
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row text-center">
+                                        <div class="col-12 col-md-6">
+                                            <img src="./IMMAGINI PROGETTO/Venezia_last-minute.jpg" class="w-75 rounded">
+                                        </div>
+                                        <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                            <p>Prenota ora e parti entro 30 giorni per un fantastico viaggio a <strong>Venezia</strong>. Scopri questa città magnifica insieme a noi!</p>
+                                            <h6 class="mt-4">PRENOTA ORA!</h6>
+                                            <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container offerte hidden" id="offerte_Eu">
+            <div class="row px-5">
+                <div class="col-12 text-center py-2"> <!--TITOLO-->
+                    <h2>Offerte Last Minute in Europa!</h2>
+                </div>
+                <div class="col-12"> <!--BODY OFFERTE-->
+                    <!--PARIGI, LONDRA E BARCELLONA-->
+                    <div class="accordion shadow" id="accordionExample">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Parigi
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row text-center">
+                                        <div class="col-12 col-md-6">
+                                            <img src="./IMMAGINI PROGETTO/Parigi_last-minute.jpg" class="w-75 rounded">
+                                        </div>
+                                        <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                            <p>Prenota ora e parti entro 30 giorni per un fantastico viaggio a <strong>Parigi</strong>. Scopri questa città magnifica insieme a noi!</p>
+                                            <h6 class="mt-4">PRENOTA ORA!</h6>
+                                            <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Londra
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row text-center" >
+                                        <div class="col-12 col-md-6">
+                                            <img src="./IMMAGINI PROGETTO/Londra_last-minute.jpg" class="w-75 rounded">
+                                        </div>
+                                        <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                            <p>Prenota ora e parti entro 30 giorni per un fantastico viaggio a <strong>Londra</strong>. Scopri questa città magnifica insieme a noi!</p>
+                                            <h6 class="mt-4">PRENOTA ORA!</h6>
+                                            <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Barcellona
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row text-center">
+                                        <div class="col-12 col-md-6">
+                                            <img src="./IMMAGINI PROGETTO/Barcellona_last-minute.jpg" class="w-75 rounded">
+                                        </div>
+                                        <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                            <p>Prenota ora e parti entro 30 giorni per un fantastico viaggio in <strong>Barcellona</strong>. Scopri questa città magnifica insieme a noi!</p>
+                                            <h6 class="mt-4">PRENOTA ORA!</h6>
+                                            <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container offerte hidden" id="offerte_Ame">
+            <div class="row px-5">
+                <div class="col-12 text-center py-2"> <!--TITOLO-->
+                    <h2>Offerte Last Minute in America!</h2>
+                </div>
+                <div class="col-12"> <!--BODY OFFERTE-->
+                    <!--NEW YORK, LOS ANGELES E BUENOS AIRES-->
+                    <div class="accordion shadow" id="accordionExample">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    New York
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row text-center">
+                                        <div class="col-12 col-md-6">
+                                            <img src="./IMMAGINI PROGETTO/New_York_last-minute.jpg" class="w-75 rounded">
+                                        </div>
+                                        <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                            <p>Prenota ora e parti entro 30 giorni per un fantastico viaggio a <strong>New York</strong>. Scopri questa città magnifica insieme a noi!</p>
+                                            <h6 class="mt-4">PRENOTA ORA!</h6>
+                                            <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Los Angeles
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row text-center" >
+                                        <div class="col-12 col-md-6">
+                                            <img src="./IMMAGINI PROGETTO/Los_Angeles_last-minute.jpg" class="w-75 rounded">
+                                        </div>
+                                        <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                            <p>Prenota ora e parti entro 30 giorni per un fantastico viaggio a <strong>Los Angeles</strong>. Scopri la città degli angeli insieme a noi!</p>
+                                            <h6 class="mt-4">PRENOTA ORA!</h6>
+                                            <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Buenos Aires
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row text-center">
+                                        <div class="col-12 col-md-6">
+                                            <img src="./IMMAGINI PROGETTO/Buenos_Aires_last-minute.jpg" class="w-75 rounded">
+                                        </div>
+                                        <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                            <p>Prenota ora e parti entro 30 giorni per un fantastico viaggio a <strong>Buenos Aires</strong>. Scopri questa città magnifica insieme a noi!</p>
+                                            <h6 class="mt-4">PRENOTA ORA!</h6>
+                                            <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--JS BOOTSTRAP-->
+        <script src="./JS/bootstrap.bundle.min.js"></script>
+        <!--JS-->
+        <script>
+            const pagOfferte = document.getElementsByClassName('offerte');
+            function cambiaPagina(id_vis) {
+                //rendo visibile il container con le offerte giuste
+                for (let pagina of pagOfferte) {
+                    if (pagina.id==id_vis) {
+                        //è la pagina che voglio vedere
+                        if (pagina.classList.contains('hidden')) {
+                            //se la pagina è nascosta allora la rendo visibile
+                            pagina.classList.remove('hidden');
+                        }
+                    } else {
+                        //è la pagina che devo nascondere
+                        if(!(pagina.classList.contains('hidden'))) {
+                            //se non è nascosta allora la nascondo
+                            pagina.classList.add('hidden');
+                        }
+                    }
+                }
+                //cambio i link per le pagine
+                const pagine = document.getElementsByClassName('pag');
+                for (let pag of pagine) {
+                    if (pag.classList.contains('active')) {
+                        if (pag.classList.contains(id_vis)) {
+                            //non fa nulla se il pulsante con classe active è quello che deve essere visualizzato
+                        } else {
+                            //cambio gli attributi del link rendendolo non attivo
+                            pag.classList.remove('active');
+                            pag.removeAttribute('aria-current')
+                        }
+                    } else {
+                        if (pag.classList.contains(id_vis)) {
+                            //la pagina visualizzata non ha la classe active allora cambio i suoi attributi
+                            pag.classList.add('active');
+                            pag.setAttribute('aria-current', 'page');
+                        } else {
+                            //la pagina non attiva non è da visualizzare quindi non faccio nulla
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+    <br>
+    <footer class="footer w-100" style="font-family: Poppins, sans-serif;  ">
+        <br>
+        <br>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <h3>La Nostra Azienda</h3>
+                    <br>
+                    <p>Tour Calypso S.R.L.S</p>
+                    <p><strong>Roma</strong> , Via dei Cerchi 17, 00186</p>
+                    <p><strong>Partita IVA: </strong>03842567922</p>
+    
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <h3>Contatti</h3>
+                    <br>
+                    <a href="#">
+                        <img src="IMMAGINI PROGETTO/icons8-facebook-500.png" alt="Facebook">
+                    </a>
+    
+                    <a href="#">
+                        <img src="IMMAGINI PROGETTO/icons8-instagram-500.png" alt="Instagram">
+                    </a>
+    
+                    <a href="#">
+                        <img src="IMMAGINI PROGETTO/icons8-twitterx-500.png" alt="Twitter">
+                    </a>
+    
+                    <a href="#">
+                        <img src="IMMAGINI PROGETTO/icons8-youtube-logo-500.png" alt="Youtube">
+                    </a>
+                    <br>
+                    <br>
+                    <a class="telefono" href="#">
+                        <img src="IMMAGINI PROGETTO/telefono.png" alt="telefono">
+                        <span> +39 586 718 8296</span>
+                    </a>
+                    <br>
+                    <br>
+                    <a class="email" href="#">
+                        <img src="IMMAGINI PROGETTO/email.png" alt="email">
+                        <span> calypsotour@pec.it</span>
+                    </a>
+    
+    
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="linkbut">
+                        <h3>Link Utili</h3>
+                        <br>
+                        <a href="./Home.html">Home</a>
+                        <br>
+                        <br>
+                        <a href="./ChiSiamo.html">Chi siamo</a>
+                        <br>
+                        <br>
+                        <a href="#">Servizi</a>
+                        <br>
+                        <br>
+                        <a href="#">Contatti</a>
+                        <br>
+                        <br>
+                        <a href="#">Metodi di Pagamento</a>
+                        <br>
+                        <br>
+                        <a href="#">Bagaglio</a>
+                        <br>
+                        <br>
+                        <a href="#">Assicurazioni</a>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="linkbut">
+                        <h3>Calypso World</h3>
+                        <br>
+                        <a href="#">Lavora con Noi</a>
+                        <br>
+                        <br>
+                        <a href="#">Il Gruppo</a>
+                        <br>
+                        <br>
+                        <a href="./Accedi.html">Area Riservata</a>
+                        <br>
+                        <br>
+                        <a href="#">Convenzioni</a>
+                        <br>
+                        <br>
+                        <a href="#">Escursioni</a>
+                        <br>
+                        <br>
+                        <a href="#">FAQ</a>
+                        <br>
+                        <br>
+                        <a href="#">Guida per gli Utenti</a>
+                        <br>
+                        <br>
+                        <a href="#">Guida per i Gestori</a>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+    </footer> 
+</html>

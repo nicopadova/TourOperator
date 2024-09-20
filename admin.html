@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amministratore</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+        <!--FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--CSS-->
+        <style>
+            .amministrazione_card {
+                border-width: 5px;
+            }
+
+            #nav_amministrazione .nav-link {
+                background-color: #366880;
+                color: #f4f4f4;
+            }
+
+            #nav_amministrazione .active {
+                background-color: #add9e7;
+                border-bottom: 0px;
+                color: black;
+                text-decoration: underline;
+            }
+
+            .amministrazione {
+                background-color: #add9e7;
+            }
+
+            .amministrazione_card {
+                background-color: #f4f4f4;
+            }
+
+            #vendite_anno {
+                color:#127d02;
+            }
+
+            #vendite_mese {
+                color:#127d02;
+            }
+
+            .positivo {
+                color:#127d02;
+            }
+
+            .negativo {
+                color: #f81900;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            .operazioni {
+                background-color: #EF7365; 
+                color:#F4F4F4;
+            }
+
+            .operazioni:hover {
+                border-style: solid;
+                border-color: #FBD26C;
+                text-decoration: underline;
+            }
+
+            /*FOOTER*/
+            .footer {
+                color: white;
+                margin-top: 80px;
+                background-color: #366880;
+                background-size: 2000px;
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+
+            }
+
+            .footer img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .footer a {
+                color: white;
+                text-decoration: none;
+                margin-bottom: 70px !important;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiar" style="background-color: #f4f4f4;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="IMMAGINI PROGETTO/png-clipart-tour-operator-logo-tours-graphic-design-egipto-paquetes-de-vacaciones-tour-operator-logo.png"
+                        alt="Logo" width="200" height="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Chi Siamo
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./ChiSiamo.html">Chi Siamo</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Destinazioni
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./destinazioni.html">Tutte le destinazioni</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Alloggi
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./Alloggi.html">Tutti i nostri alloggi</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Offerte
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pacchetti.html">Pacchetti</a></li>
+                                <li><a class="dropdown-item" href="./LastMinute.html">Last Minute</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Preventivo
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./Preventivatore.html">Richiedi un preventivo</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                    <div class="dropdown" style="margin-right: 10px;">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="IMMAGINI PROGETTO/user-profile-icon-free-vector.png" alt="user" width="50"
+                                height="50">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./Accedi.html">Accedi</a></li>
+                            <li><a class="dropdown-item" href="./Registrati.html">Registrati</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <form class="d-flex" role="search" style="margin-top: 12px;">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"
+                            style="color: #2e92a9; border-color: #2e92a9; ">Search</button>
+                    </form>
+    
+                </div>
+            </div>
+        </nav>
+        <nav class="shadow border-top pt-1" aria-label="breadcrumb" style="background-color: #f4f4f4;">
+            <div class="container-fluid ps-0 ms-0">
+                <ol class="breadcrumb mb-0 ms-2 ps-1 pb-1">
+                    <li class="breadcrumb-item"><a href="./Home.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Area Amministratore</li>
+                </ol>
+            </div>
+        </nav>
+        <!--FINE HEADER-->
+        <div class="nav" id="nav_amministrazione"> <!--NAVIGAZIONE AMMINISTRATORE-->
+            <ul class="nav nav-tabs ms-0 ps-4 mt-4">
+                <li class="nav-item">
+                    <a class="nav-link nav-admin active" aria-current="page" href="#dashboard" onclick="schermata('dashboard', this)">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-admin" href="#destinazioni" onclick="schermata('destinazioni', this)">Destinazioni</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-admin" href="#alloggi" onclick="schermata('alloggi', this)">Alloggi</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link nav-admin" href="#utenti" onclick="schermata('utenti', this)">Utenti</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link nav-admin" href="#prenotazioni" onclick="schermata('prenotazioni', this)">Prenotazioni</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-admin" href="#offerte" onclick="schermata('offerte', this)">Offerte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-admin" href="#messaggi" onclick="schermata('messaggi', this)">Messaggi & Recensioni</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid shown shadow amministrazione text-center pb-2 text-center" id="dashboard"> <!--DASHBOARD-->
+            <div class="row pt-4"> <!--TITOLO-->
+                <div class="col">
+                    <h1>AMMINISTRAZIONE</h1>
+                </div>
+            </div>
+            <div class="row my-3 mx-2 px-5 d-flex align-items-stretch"> <!--GESTIONE-->
+                <div class="col-12 col-md-6 my-1"> <!--REPORT VENDITE-->
+                    <div class="card amministrazione_card rounded shadow border-end-0 border-top-0 border-bottom-0 h-100" style="border-color: #f81900;">
+                        <div class="card-body h-100">
+                            <h5 class="card-title mt-2 mb-4">Report vendite</h5>
+                            <div class="row">
+                                <div class="col-12 col-md-6 my-2">
+                                    Vendite dell'anno: <span id="vendite_anno">100000 €</span>
+                                </div>
+                                <div class="col-12 col-md-6 my-2">
+                                    Rispetto lo scorso anno: <span class="negativo" id="diff_anno">-20000 €</span>
+                                </div>
+                                <div class="col-12 col-md-6 my-3">
+                                    Vendite del mese: <span id="vendite_mese">20000 €</span>
+                                </div>
+                                <div class="col-12 col-md-6 my-3">
+                                    Rispetto lo scorso mese: <span class="positivo" id="diff_mese">+200 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 my-1"> <!--OPERAZIONE CREA-->
+                    <div class="card amministrazione_card rounded shadow border-end-0 border-top-0 border-bottom-0 h-100" style="border-color: #127d02;">
+                        <div class="card-body h-100">
+                            <h5 class="card-title mt-2 mb-4">Aggiungi</h5>
+                            <!--DESTINAZIONE E ALLOGGIO-->
+                            <div class="row m-1 d-flex justify-content-around">
+                                <button type="button" class="m-2 col-5 btn operazioni" data-bs-toggle="modal" data-bs-target="#newDestinazioneModal" onclick="editModalDestinazione(0, '')">NUOVA DESTINAZIONE</button>
+                                <button type="button" class="m-2 col-5 btn operazioni" data-bs-toggle="modal" data-bs-target="#newAlloggioModal" onclick="editModalAlloggi(0, '')">NUOVO ALLOGGIO</button>
+                            </div>
+                            <!--UTENTE E OFFERTA-->
+                            <div class="row m-1 d-flex justify-content-around">
+                                <button type="button" class="m-2 col-5 btn operazioni" data-bs-toggle="modal" data-bs-target="#newUtenteModal" onclick="editModalUtenti(0, '')">NUOVO UTENTE</button>
+                                <button type="button" class="m-2 col-5 btn operazioni" data-bs-toggle="modal" data-bs-target="#newOffertaModal" onclick="editModalOfferte(0, '')">NUOVA OFFERTA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4 mx-2 px-5 d-flex align-items-stretch"> <!--CLIENTELA-->
+                <div class="col-12 col-md-6"> <!--RECENSIONI-->
+                    <div class="card amministrazione_card rounded shadow border-end-0 border-top-0 border-bottom-0 h-100" style="border-color: #0134ed;">
+                        <div class="card-body h-100">
+                            <h5 class="card-title mt-2 mb-4"> Ultime Recensioni</h5>
+                            <div class="container overflow-y-auto rounded" style="border-style: solid; max-height: 110px;">
+                                <ul id="lista-recensioni" class="list-group">
+                                    <li class="list-group-item"><span class="utente-rec">Mario Rossi</span>: <span class="titolo-rec">Ottima esperienza</span></li>
+                                    <li class="list-group-item"><span class="utente-rec">Giordano Bruno</span>: <span class="titolo-rec">Esperienza scottante!</span></li>
+                                    <li class="list-group-item">Recensione 3</li>
+                                    <li class="list-group-item">Recensione 4</li>
+                                    <li class="list-group-item">Recensione 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6"> <!--MESSAGGI-->
+                    <div class="card amministrazione_card rounded shadow border-end-0 border-top-0 border-bottom-0 h-100" style="border-color: #a1b900;">
+                        <div class="card-body h-100">
+                            <h5 class="card-title mt-2 mb-4">Ultimi Messaggi</h5>
+                            <div class="container overflow-y-auto rounded" style="border-style: solid; max-height: 110px;">
+                                <ul id="lista-messaggi" class="list-group">
+                                    <li class="list-group-item"><span class="utente-mes">Davide Ferrari</span>: <span class="anteprima-mes">Salve, vi scrivo perché...</span></li>
+                                    <li class="list-group-item"><span class="utente-mes">Giovanni Verdi</span>: <span class="anteprima-mes">Salve, vorrei cancellare...</span></li>
+                                    <li class="list-group-item"><span class="utente-mes">Giovanna Mancini</span>: <span class="anteprima-mes">Ho provato a prenotare...</span></li>
+                                    <li class="list-group-item"><span class="utente-mes">Federico Rossi</span>: <span class="anteprima-mes">Salve, avevo chiesto un rimborso...</span></li>
+                                    <li class="list-group-item">Messaggio 5</li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid hidden shadow amministrazione text-center pb-2 text-center" id="destinazioni"> <!--DESTINAZIONI-->
+            <div class="row pt-4"> <!--TITOLO-->
+                <div class="col">
+                    <h1>DESTINAZIONI</h1>
+                </div>
+            </div>
+            <table class="table my-3 mx-2 px-5"> <!--TABELLA-->
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">N° alloggi</th>
+                        <th scope="col">Prenotazioni</th>
+                        <th scope="col">Operazioni</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-destinazioni">
+                    <!--PARTE DINAMICA-->
+                </tbody>
+            </table>
+        </div>
+        <div class="container-fluid hidden shadow amministrazione text-center pb-2 text-center" id="alloggi"> <!--ALLOGGI-->
+            <div class="row pt-4"> <!--TITOLO-->
+                <div class="col">
+                    <h1>ALLOGGI</h1>
+                </div>
+            </div>
+            <table class="table my-3 mx-2 px-5"> <!--TABELLA-->
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Destinazione</th>
+                        <th scope="col">Prezzo</th>
+                        <th scope="col">Stelle</th>
+                        <th scope="col">Operazioni</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-alloggi">
+                    <!--PARTE DINAMICA-->
+                </tbody>
+            </table>
+        </div>
+        <div class="container-fluid hidden shadow amministrazione text-center pb-2 text-center" id="utenti"> <!--UTENTI-->
+            <div class="row pt-4"> <!--TITOLO-->
+                <div class="col">
+                    <h1>UTENTI</h1>
+                </div>
+            </div>
+            <table class="table my-3 mx-2 px-5"> <!--TABELLA-->
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Cognome</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Password</th>
+                        <th scope="col">Data di nascita</th>
+                        <th scope="col">Operazioni</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-utenti">
+                    <!--PARTE DINAMICA-->
+                </tbody>
+            </table>
+        </div>
+        <div class="container-fluid hidden shadow amministrazione text-center pb-2 text-center" id="prenotazioni"> <!--PRENOTAZIONI-->
+            <div class="row pt-4"> <!--TITOLO-->
+                <div class="col">
+                    <h1>Prenotazioni</h1>
+                </div>
+            </div>
+            <table class="table my-3 mx-2 px-5"> <!--TABELLA-->
+                <thead>
+                    <tr>
+                        <th scope="col">Utente</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Destinazione</th>
+                        <th scope="col">Viaggiatori</th>
+                        <th scope="col">Giorni</th>
+                        <th scope="col">Prezzo</th>
+                        <th scope="col">Sconto</th>
+                        <th scope="col">Operazioni</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-prenotazioni">
+                    <!--PARTE DINAMICA-->
+                </tbody>
+            </table>
+        </div>
+        <div class="container-fluid hidden shadow amministrazione text-center pb-2 text-center" id="offerte"> <!--OFFERTE-->
+            <div class="row pt-4"> <!--TITOLO-->
+                <div class="col">
+                    <h1>OFFERTE</h1>
+                </div>
+            </div>
+            <table class="table my-3 mx-2 px-5"> <!--TABELLA-->
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Destinazione</th>
+                        <th scope="col">Prezzo</th>
+                        <th scope="col">Sconto</th>
+                        <th scope="col">Stelle</th>
+                        <th scope="col">Operazioni</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-offerte">
+                    <!--PARTE DINAMICA-->
+                </tbody>
+            </table>
+        </div>
+        <div class="container-fluid hidden shadow amministrazione text-center pb-2 text-center" id="messaggi"> <!--MESSAGGI E RECENSIONI-->
+            <div class="row pt-4"> <!--TITOLO-->
+                <div class="col">
+                    <h1>MESSAGGI E RECENSIONI</h1>
+                </div>
+            </div>
+            <table class="table my-3 mx-2 px-5"> <!--TABELLA-->
+                <thead>
+                    <tr>
+                        <th scope="col">Tipologia</th>
+                        <th scope="col">Utente</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Anteprima</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Voto</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-comunicazioni">
+                    <tr>
+                        <td class="tipo-com">Recensione</td>
+                        <td class="utente-com">Mario Rossi</td>
+                        <td class="email-com">mariorossi@email.com</td>
+                        <td class="anteprima-com">Ottima esperienza</td>
+                        <td class="data-com">16-07-2024</td>
+                        <td class="voto-com">4/5 stelle</td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-com">Messaggio</td>
+                        <td class="utente-com">Davide Ferrari</td>
+                        <td class="email-com">ferraridavid@email.com</td>
+                        <td class="anteprima-com">Salve, vi scrivo perché...</td>
+                        <td class="data-com">16-07-2024</td>
+                        <td class="voto-com">--</td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-com">Recensione</td>
+                        <td class="utente-com">Giordano Bruno</td>
+                        <td class="email-com">brunogiordano@email.com</td>
+                        <td class="anteprima-com">Esperienza scottante!</td>
+                        <td class="data-com">13-07-2024</td>
+                        <td class="voto-com">5/5 stelle</td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-com">Messaggio</td>
+                        <td class="utente-com">Giovanni Verdi</td>
+                        <td class="email-com">gverdi@email.com</td>
+                        <td class="anteprima-com">Salve, vorrei cancellare...</td>
+                        <td class="data-com">11-07-2024</td>
+                        <td class="voto-com">--</td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-com">Messaggio</td>
+                        <td class="utente-com">Giovanna Mancini</td>
+                        <td class="email-com">giovannaleft@email.com</td>
+                        <td class="anteprima-com">Ho provato a prenotare...</td>
+                        <td class="data-com">27-06-2024</td>
+                        <td class="voto-com">--</td>
+                    </tr>
+                    <tr>
+                        <td class="tipo-com">Messaggio</td>
+                        <td class="utente-com">Federico Rossi</td>
+                        <td class="email-com">rossifederico@email.com</td>
+                        <td class="anteprima-com">Salve, avevo chiesto un rimborso...</td>
+                        <td class="data-com">15-06-2024</td>
+                        <td class="voto-com">--</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--MODAL PER AGGIUNGERE UNA DESTINAZIONE-->
+        <div class="modal fade" id="newDestinazioneModal" tabindex="-1" aria-labelledby="DestinazioniModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="DestinazioniModalLabel">NUOVA DESTINAZIONE</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                <div class="modal-body">
+                    <h6>Aggiungi i dati della destinazione</h6>
+                    <form id="newDestinazione" name="newDestinazione" method="post">
+                        <input type="text" class="hidden" id="idDestinazione">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingNomeNuovaDestinazione" placeholder="name">
+                            <label for="floatingNomeNuovaDestinazione">Nome della destinazione</label>
+                        </div>
+                        <input type="submit" id="inviaDestinazione" class="btn operazioni" value="AGGIUNGI">
+                        <button id="modificaDestinazione" class="btn operazioni hidden">MODIFICA</button>
+                    </form>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MODAL PER AGGIUNGERE UN ALLOGGIO-->
+        <div class="modal fade" id="newAlloggioModal" tabindex="-1" aria-labelledby="AlloggiModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="AlloggiModalLabel">NUOVO ALLOGGIO</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                <div class="modal-body">
+                    <h6>Aggiungi i dati dell'alloggio</h6>
+                    <form id="newAlloggio" name="newAlloggio" method="post">
+                        <input type="text" class="hidden" id="idAlloggio">
+                        <!--nome-->
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingNomeNuovoAlloggio" placeholder="name">
+                            <label for="floatingNomeNuovoAlloggio">Nome dell'alloggio</label>
+                        </div>
+                        <!--destinazione-->
+                        <select id="selectDestinazioni" class="form-select my-2" aria-label="Default select">
+                            <option selected>Scegli la destinazione</option>
+                            <!--parte dinamica-->
+                        </select>
+                        <div class="row ps-2 my-2">
+                            <div class="col-6 p-1 form-floating mb-3">
+                                <input type="number" class="form-control" id="floatingPrezzoNuovoAlloggio" placeholder="name">
+                                <label for="floatingPrezzoNuovoAlloggio">Prezzo</label>
+                            </div>
+                            <div class="col-6">
+                                <select id="selectStelle" class="form-select my-2" aria-label="Default select">
+                                    <option selected>Numero di stelle</option>
+                                    <option value="1">1 stella</option>
+                                    <option value="2">2 stelle</option>
+                                    <option value="3">3 stelle</option>
+                                    <option value="4">4 stelle</option>
+                                    <option value="5">5 stelle</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="submit" id="inviaAlloggio" class="btn operazioni" value="AGGIUNGI">
+                        <button class="btn operazioni hidden" id="modificaAlloggio">MODIFICA</button>
+                    </form>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal per aggiungere nuovi utenti-->
+        <div class="modal fade" id="newUtenteModal" tabindex="-1" aria-labelledby="UtentiModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="UtentiModalLabel">NUOVO UTENTE</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                <div class="modal-body">
+                    <h6>Aggiungi i dati utente</h6>
+                    <form id="newUtente" name="newUtente" method="post">
+                        <input type="text" class="hidden" id="idUtente">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" name="email" id="floatingEmailNuovoUtente" placeholder="email@example.com">
+                            <label for="floatingEmailNuovoUtente">Indirizzo Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingNomeNuovoUtente" placeholder="name">
+                            <label for="floatingNomeNuovoUtente">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingCognomeNuovoUtente" placeholder="lastname">
+                            <label for="floatingCognomeNuovoUtente">Cognome</label>
+                        </div>
+                        <div class="form-floating mx-0 mb-2" style="display: flex; flex-direction: row;">
+                            <input type="password" class="form-control" name="password" id="floatingPasswordNuovoUtente" placeholder="Password" aria-describedby="basic-addon2">
+                            <label for="floatingPasswordNuovoUtente">Password</label>
+                            <span class="input-group-text pw-eye" id="basic-addon2" onclick="showHidePW('accesso')"><img src="./IMMAGINI PROGETTO/eye.png" class="opacity-50 accesso" height="45px"><img src="./IMMAGINI PROGETTO/hide.png" class="opacity-50 accesso hidden" height="45px"></span>
+                        </div>
+                        <div class="form-floating mx-0 mb-2" style="display: flex; flex-direction: row;">
+                            <input type="password" class="form-control" name="conferma" id="floatingPasswordConfNuovoUtente" placeholder="Password" aria-describedby="basic-addon2">
+                            <label for="floatingPasswordConfNuovoUtente">Conferma Password</label>
+                            <span class="input-group-text pw-eye" id="basic-addon2" onclick="showHidePW('conferma')"><img src="./IMMAGINI PROGETTO/eye.png" class="opacity-50 conferma" height="45px"><img src="./IMMAGINI PROGETTO/hide.png" class="opacity-50 conferma hidden" height="45px"></span>
+                        </div>
+                        <div class="row text-center px-4"> <!--RIGA DATA DI NASCITA-->
+                            <div class="col-12 ps-0 mt-1 mb-1">
+                                <p class="text-start mt-2 mb-1" style="color: grey; font-size: small;">Data di nascita:</p>
+                            </div>
+                            <div class="col-12 col-md-4 my-1 px-0 pe-md-1">
+                                <select class="form-select" id="giorno">
+                                    <option style="display: none;">GG</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4 my-1 px-0 pe-md-1">
+                                <select class="form-select" id="mese">
+                                    <option style="display: none;">MM</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-4 my-1 px-0">
+                                <select class="form-select" id="anno">
+                                    <option style="display: none;">YYYY</option>
+                                    <option value="1950">1950</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row px-4"> <!--RIGA PRIVACY-->
+                            <div class="col-12 ps-0 mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input border-dark" type="checkbox" value="" id="CheckPrivacyNuovoUtente" required>
+                                    <label class="form-check-label" for="CheckPrivacy">
+                                        <p style="color: black; display:inline-block;">L'utente ha letto e compreso la privacy policy?</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" id="inviaUtente" class="btn operazioni" value="AGGIUNGI">
+                        <button class="btn operazioni hidden" id="modificaUtente">MODIFICA</button>
+                    </form>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal per aggiungere nuova offerta-->
+        <div class="modal fade" id="newOffertaModal" tabindex="-1" aria-labelledby="OfferteModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="OfferteModalLabel">NUOVA OFFERTA</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                <div class="modal-body">
+                    <h6>Inserisci i dati dell'offerta</h6>
+                    <form id="newOfferta" name="newOfferta" method="post">
+                        <select id="selectAlloggioOff" class="form-select my-2" aria-label="Default select">
+                            <option selected>Scegli l'alloggio a cui applicare lo sconto</option>
+                            <!--parte dinamica-->
+                        </select>
+                        <div class="p-1 form-floating mb-3">
+                            <input type="number" class="form-control" id="floatingScontoNuovaOfferta" placeholder="name">
+                            <label for="floatingScontoNuovaOfferta">Sconto</label>
+                        </div>
+                        <input type="submit" class="btn operazioni" id="inviaOfferta" value="AGGIUNGI">
+                        <button class="btn operazioni hidden" id="modificaOfferta">MODIFICA</button>
+                    </form>
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <footer class="footer w-100" style="font-family: Poppins, sans-serif;  ">
+            <br>
+            <br>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                        <h3>La Nostra Azienda</h3>
+                        <br>
+                        <p>Tour Calypso S.R.L.S</p>
+                        <p><strong>Roma</strong> , Via dei Cerchi 17, 00186</p>
+                        <p><strong>Partita IVA: </strong>03842567922</p>
+        
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                        <h3>Contatti</h3>
+                        <br>
+                        <a href="#">
+                            <img src="IMMAGINI PROGETTO/icons8-facebook-500.png" alt="Facebook">
+                        </a>
+        
+                        <a href="#">
+                            <img src="IMMAGINI PROGETTO/icons8-instagram-500.png" alt="Instagram">
+                        </a>
+        
+                        <a href="#">
+                            <img src="IMMAGINI PROGETTO/icons8-twitterx-500.png" alt="Twitter">
+                        </a>
+        
+                        <a href="#">
+                            <img src="IMMAGINI PROGETTO/icons8-youtube-logo-500.png" alt="Youtube">
+                        </a>
+                        <br>
+                        <br>
+                        <a class="telefono" href="#">
+                            <img src="IMMAGINI PROGETTO/telefono.png" alt="telefono">
+                            <span> +39 586 718 8296</span>
+                        </a>
+                        <br>
+                        <br>
+                        <a class="email" href="#">
+                            <img src="IMMAGINI PROGETTO/email.png" alt="email">
+                            <span> calypsotour@pec.it</span>
+                        </a>
+        
+        
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="linkbut">
+                            <h3>Link Utili</h3>
+                            <br>
+                            <a href="./Home.html">Home</a>
+                            <br>
+                            <br>
+                            <a href="./ChiSiamo.html">Chi siamo</a>
+                            <br>
+                            <br>
+                            <a href="#">Servizi</a>
+                            <br>
+                            <br>
+                            <a href="#">Contatti</a>
+                            <br>
+                            <br>
+                            <a href="#">Metodi di Pagamento</a>
+                            <br>
+                            <br>
+                            <a href="#">Bagaglio</a>
+                            <br>
+                            <br>
+                            <a href="#">Assicurazioni</a>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                        <div class="linkbut">
+                            <h3>Calypso World</h3>
+                            <br>
+                            <a href="#">Lavora con Noi</a>
+                            <br>
+                            <br>
+                            <a href="#">Il Gruppo</a>
+                            <br>
+                            <br>
+                            <a href="#">Area Riservata</a>
+                            <br>
+                            <br>
+                            <a href="#">Convenzioni</a>
+                            <br>
+                            <br>
+                            <a href="#">Escursioni</a>
+                            <br>
+                            <br>
+                            <a href="#">FAQ</a>
+                            <br>
+                            <br>
+                            <a href="#">Guida per gli Utenti</a>
+                            <br>
+                            <br>
+                            <a href="#">Guida per i Gestori</a>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+        
+        
+                </div>
+            </div>
+        </footer>        
+        <!--JS BOOTSTRAP-->
+        <script src="./JS/bootstrap.bundle.min.js"></script>
+        <!--JS-->
+        <script>
+            //funzioni
+            function schermata(contenitore, btn) {
+                //seleziono il contenitore da mostrare e quello da nascondere
+                let daMostrare = document.getElementById(contenitore);
+                let daNascondere = document.getElementsByClassName('shown');
+                //seleziono i pulsanti della navigazione amministratore
+                let pulsanti = document.getElementsByClassName('nav-admin');
+                //ora controllo che il contenitore da mostrare NON sia quello in schermo adesso
+                if (!(daMostrare.classList.contains('shown'))) {
+                    //nascondo il contenitore in schermo
+                    daNascondere.item(0).classList.add('hidden');
+                    daNascondere.item(0).classList.remove('shown');
+                    //mostro il nuovo contenitore
+                    daMostrare.classList.remove('hidden');
+                    daMostrare.classList.add('shown');
+                    //ora modifico le tab di navigazione
+                    //cerco il pulsante con classe active e lo disattivo
+                    for (let pulsante of pulsanti) {
+                        if(pulsante.classList.contains('active')) {
+                            pulsante.classList.remove('active');
+                            pulsante.removeAttribute('aria-current');
+                        }
+                    }
+                    //adesso attivo il pulsante che è stato cliccato
+                    btn.classList.add('active');
+                    btn.setAttribute('aria-current', 'page');
+                }
+            }
+            function showHidePW(tipo) {
+                //prendo le icone da cambiare
+                let icona = document.getElementsByClassName(tipo);
+                let password;
+                if (tipo == 'accesso') {
+                    password = document.getElementById('floatingPasswordNuovoUtente');
+                } else {
+                    password = document.getElementById('floatingPasswordConfNuovoUtente');
+                }
+                if (password.type=='password') {
+                    password.type='text';
+                } else {
+                    password.type='password';
+                }
+                for (let img of icona) {
+                    img.classList.toggle('hidden');
+                }
+            }
+
+            async function controllo() {
+                const token = localStorage.getItem('authToken');
+
+                try {
+                    const response = await fetch('http://localhost:8080/utenti/admin', {
+                        method: 'GET',
+                        headers: {
+                            'Authorization': `${token}`
+                        }
+                    })
+                    if(response.status==200) {
+                        alert('Benvenuto amministratore!');
+                    } else {
+                        alert("Utente non autorizzato. Fai prima l'accesso");
+                        window.location.href="./accedi.html";
+                    }
+                } catch (error) {
+                    console.log('errore');
+                }
+            }
+            //modifica pagina
+            document.addEventListener('DOMContentLoaded', function() {
+                //seleziono tutti gli elementi da modificare in DASHBOARD
+                const venditeAnno = document.getElementById('vendite_anno');
+                const differenzaAnno = document.getElementById('diff_anno');
+                const venditeMese = document.getElementById('vendite_mese');
+                const differenzaMese = document.getElementById('diff_mese');
+                const recensioniNuove = document.getElementById('lista-recensioni');
+                const messaggiNuovi = document.getElementById('lista-messaggi');
+                //modifico il REPORT VENDITE
+                let totAnno;
+                let totAnnoPass;
+                let totMese;
+                let totMesePass;
+                /*fetch('http://localhost:8080/preventivi')
+                    .then(res => res.json())
+                    .then(data => {
+                        //prendo tutti il totale generato dai preventivi la cui data è compresa tra inizio anno e data attuale
+                        let oggi = new Date();
+                    })  DA FINIRE*/
+                
+                    //DESTINAZIONI
+                function fetchDestinazioni() {
+                    //seleziono tutti gli elementi da modificare in DESTINAZIONI
+                    const tabellaDestinazioni = document.getElementById('tbody-destinazioni');
+                    const selectDestinazioni = document.getElementById('selectDestinazioni');
+                    //const selectDestinazioniOfferta = document.getElementById('selectDestinazioniOff')
+                    //cancello ciò che era scritto prima
+                    tabellaDestinazioni.innerHTML = '';
+                    selectDestinazioni.innerHTML = '<option selected>Scegli la destinazione</option>';
+                    //costruisco la tabella delle DESTINAZIONI
+                    fetch('http://localhost:8080/destinazioni')
+                        .then(res => res.json())
+                        .then(data => {
+                            //considero ciascuna destinazione ricevuta dal DB
+                            data.forEach(destinazione => {
+                                //costruisco la riga dedicata alla singola destinazione
+                                const row = document.createElement('tr');
+                                //riempio la riga con la destinazione
+                                row.innerHTML = `
+                                    <td>${destinazione.nome}</td>
+                                `;
+                                row.innerHTML+=`
+                                    <td><b>WIP</b></td>
+                                    <td><b>WIP</b></td>
+                                    <td>
+                                        <button type="button" class="btn operazioni" data-bs-toggle="modal" data-bs-target="#newDestinazioneModal" onclick="editModalDestinazione(${destinazione.id}, '${destinazione.nome}')"><img src="./IMMAGINI PROGETTO/modifica.png"></button>
+                                        <button type="button" class="btn operazioni" onclick="deleteElemento(${destinazione.id}, '${destinazione.nome}', 'destinazioni')"><img src="./IMMAGINI PROGETTO/rimuovi.png"></button>
+                                    </td>
+                                `;
+                                //inserisco la riga nel documento
+                                tabellaDestinazioni.appendChild(row);
+                                //contaAlloggi(destinazione.nome, destinazione.id);
+                                //contaPrenotazioni(destinazione.nome, destinazione.id);
+                                //modifico i select per nuovi alloggi e offerte
+                                const opzione = document.createElement('option');
+                                opzione.setAttribute('value', destinazione.id);
+                                opzione.innerHTML = `
+                                    ${destinazione.nome}
+                                `;
+                                selectDestinazioni.appendChild(opzione);
+                            })
+                        })
+                }
+                
+                //ALLOGGI
+                function fetchAlloggi() {
+                    //seleziono gli elementi da modificare in ALLOGGI
+                    const tabellaAlloggi = document.getElementById('tbody-alloggi');
+                    const selectAlloggi = document.getElementById('selectAlloggioOff')
+                    tabellaAlloggi.innerHTML = "";
+                    selectAlloggi.innerHTML = "<option selected>Scegli l'alloggio a cui applicare lo sconto</option>";
+                    //costruisco la tabella degli ALLOGGI
+                    fetch('http://localhost:8080/alloggi')
+                        .then(res => res.json())
+                        .then(data => {
+                            //considero ciascun alloggio ricevuto dal DB
+                            data.forEach(alloggio => {
+                                //costruisco la riga del singolo alloggio
+                                const row = document.createElement('tr');
+                                //riempio la riga con i dati dell'alloggio
+                                row.innerHTML = `
+                                    <td>${alloggio.nome}</td>
+                                    <td>${alloggio.destinazione.nome}</td>
+                                    <td>${alloggio.prezzo}€</td>
+                                    <td>${alloggio.stelle} stelle</td>
+                                    <td class="operazioni-de">
+                                        <button type="button" class="btn operazioni" data-bs-toggle="modal" data-bs-target="#newAlloggioModal" onclick="editModalAlloggi(${alloggio.id}, '${alloggio.nome}')"><img src="./IMMAGINI PROGETTO/modifica.png"></button>
+                                        <button type="button" class="btn operazioni" onclick="deleteElemento(${alloggio.id}, '${alloggio.nome}', 'alloggi')"><img src="./IMMAGINI PROGETTO/rimuovi.png"></button>
+                                    </td>
+                                `;
+                                //inserisco la riga nella tabella
+                                tabellaAlloggi.appendChild(row);
+                                //creo l'opzione del select dedicata a questo alloggio
+                                const opzione = document.createElement('option');
+                                opzione.setAttribute('value', alloggio.id);
+                                opzione.innerHTML = `
+                                    ${alloggio.nome}
+                                `;
+                                selectAlloggi.appendChild(opzione);
+                            })
+                        })
+                }
+                
+                //UTENTI
+                function fetchUtenti() {
+                    //seleziono gli oggetti da modificare in UTENTI
+                    const tabellaUtenti = document.getElementById('tbody-utenti');
+                    tabellaUtenti.innerHTML = '';
+                    //costruisco la tabella UTENTI
+                    fetch('http://localhost:8080/utenti')
+                        .then(res => res.json())
+                        .then(data => {
+                            //considero il singolo utente
+                            data.forEach(utente => {
+                                //creo la riga del singolo utente
+                                const row = document.createElement('tr');
+                                //elaboro la data di nascita
+                                const date = new Date(utente.nascita);
+                                let nascitaUtente = date.toLocaleDateString();
+                                //riempio la riga con i dati dell'utente
+                                row.innerHTML = `
+                                    <td>${utente.nome}</td>
+                                    <td>${utente.cognome}</td>
+                                    <td>${utente.email}</td>
+                                    <td>${utente.password}</td>
+                                    <td>${nascitaUtente}</td>
+                                    <td class="operazioni-de">
+                                        <button type="button" class="btn operazioni" data-bs-toggle="modal" data-bs-target="#newUtenteModal" onclick="editModalUtenti(${utente.id}, '${utente.nome}')"><img src="./IMMAGINI PROGETTO/modifica.png"></button>
+                                        <button type="button" class="btn operazioni" onclick="deleteElemento(${utente.id}, '${utente.nome}', 'utenti')"><img src="./IMMAGINI PROGETTO/rimuovi.png"></button>
+                                    </td>
+                                `;
+                                //inserisco la riga nella tabella
+                                tabellaUtenti.appendChild(row);
+                            })
+                        })
+                }
+                
+                //PRENOTAZIONI
+                function fetchPrenotazioni() {
+                    //seleziono gli oggetti da modificare in PRENOTAZIONI
+                    const tabellaPrenotazioni = document.getElementById('tbody-prenotazioni');
+                    tabellaPrenotazioni.innerHTML = '';
+                    //costruisco la tabella PRENOTAZIONI
+                    fetch('http://localhost:8080/preventivo')
+                        .then(res => res.json())
+                        .then(data => {
+                            //considero la singola prenotazione
+                            data.forEach(prenotazione => {
+                                //creo la riga per la singola prenotazione
+                                const row = document.createElement('tr');
+                                //riempio la riga con i dati della prenotazione
+                                row.innerHTML = `
+                                    <td>${prenotazione.nome} ${prenotazione.cognome}</td>
+                                    <td>${prenotazione.email}</td>
+                                    <td>${prenotazione.destinazione.nome}</td>
+                                    <td>${prenotazione.viaggiatori}</td>
+                                    <td>${prenotazione.giorni}</td>
+                                    <td>${prenotazione.prezzoElaborato}€</td>
+                                `;
+                                //calcolo se lo sconto è presente
+                                let sconto = 0;
+                                if (prenotazione.minoriPresenti==true) {
+                                    sconto=10;
+                                }
+                                row.innerHTML+=`
+                                    <td>${sconto}%</td>
+                                    <td class="operazioni-de">
+                                        <button type="button" class="btn operazioni" onclick="editPrenotazione(${prenotazione.id})"><img src="./IMMAGINI PROGETTO/modifica.png"></button>
+                                        <button type="button" class="btn operazioni" onclick="deleteElemento(${prenotazione.id}, '${prenotazione.email}', 'preventivo')"><img src="./IMMAGINI PROGETTO/rimuovi.png"></button>
+                                    </td>
+                                `;
+                                tabellaPrenotazioni.appendChild(row);
+                            })
+                        })
+                }
+                
+                //OFFERTE
+                function fetchOfferte() {
+                    //seleziono gli elementi da modificare in OFFERTE
+                    const tabellaOfferte = document.getElementById('tbody-offerte');
+                    tabellaOfferte.innerHTML = '';
+                    //costruisco la tabella delle offerte partendo da quella di alloggi
+                    fetch('http://localhost:8080/alloggi')
+                        .then(res => res.json())
+                        .then(data => {
+                            //considero ciascun alloggio ricevuto dal DB
+                            data.forEach(alloggio => {
+                                //controllo se l'alloggio prevede uno sconto
+                                if(alloggio.sconto>0) {
+                                    //l'alloggio ha uno sconto, quindi è un'offertay
+                                    //costruisco la riga della singola offerta
+                                    const row = document.createElement('tr');
+                                    //riempio la riga con i dati dell'offerta
+                                    row.innerHTML = `
+                                        <td>${alloggio.nome}</td>
+                                        <td>${alloggio.destinazione.nome}</td>
+                                        <td>${alloggio.prezzo}€</td>
+                                        <td>${alloggio.sconto}%</td>
+                                        <td>${alloggio.stelle} stelle</td>
+                                        <td class="operazioni-de">
+                                            <button type="button" class="btn operazioni" data-bs-toggle="modal" data-bs-target="#newOffertaModal" onclick="editModalOfferte(${alloggio.id}, '${alloggio.nome}')"><img src="./IMMAGINI PROGETTO/modifica.png"></button>
+                                            <button type="button" class="btn operazioni" onclick="deleteOfferta(${alloggio.id}, '${alloggio.nome}')"><img src="./IMMAGINI PROGETTO/rimuovi.png"></button>
+                                        </td>
+                                    `;
+                                    //inserisco la riga nella tabella
+                                    tabellaOfferte.appendChild(row);
+                                }
+                            })
+                        })
+                }
+                
+                //MESSAGGI E RECENSIONI
+                //seleziono gli oggetti da modificare in MESSAGGI E RECENSIONI
+                const tabellaComunicazioni = document.getElementById('tbody-comunicazioni');
+                //costruisco la tabella MESSAGGI E RECENSIONI
+                //fetch(...) => ...
+
+                //OPERAZIONI CREATE
+
+                //DESTINAZIONI
+                const formNewDestinazione = document.getElementById('newDestinazione');
+                formNewDestinazione.addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    const id = document.getElementById('idDestinazione').value;
+                    const url = id ? `http://localhost:8080/destinazioni/${id}` : 'http://localhost:8080/destinazioni';
+                    const method = id ? 'PUT' : 'POST';
+                    const nomeDestinazione = document.getElementById('floatingNomeNuovaDestinazione');
+                    const destinazione = {
+                        nome: nomeDestinazione.value
+                    }
+
+                    fetch(url, {
+                        method: method,
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(destinazione)
+                    }).then(() => {
+                        fetchDestinazioni();
+                        formNewDestinazione.reset();
+                    });
+                    //riporto il form nello stato iniziale
+                    //modifico il metodo del form
+                    document.getElementById('newDestinazione').setAttribute('method', 'post');
+                    //nascondo il pulsante INVIA
+                    document.getElementById('inviaDestinazione').classList.remove('hidden');
+                    //mostro il pulsante MODIFICA
+                    document.getElementById('modificaDestinazione').classList.add('hidden');
+                    //cambio il titolo del modal
+                    document.getElementById('DestinazioniModalLabel').innerText = 'NUOVA DESTINAZIONE';
+                });
+
+                //ALLOGGI
+                const formNewAlloggio = document.getElementById('newAlloggio');
+                formNewAlloggio.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const id = document.getElementById('idAlloggio').value;
+                    const url = id ? `http://localhost:8080/alloggi/${id}` : 'http://localhost:8080/alloggi';
+                    const method = id ? 'PUT' : 'POST';
+                    const nomeAlloggio = document.getElementById('floatingNomeNuovoAlloggio');
+                    const destinazioneAlloggio = document.getElementById('selectDestinazioni');
+                    const prezzoAlloggio = document.getElementById('floatingPrezzoNuovoAlloggio');
+                    const stelleAlloggio = document.getElementById('selectStelle');
+                    const alloggio = {
+                        nome: nomeAlloggio.value,
+                        prezzo: prezzoAlloggio.value,
+                        descrizione: '',
+                        sconto: 0,
+                        destinazione: {
+                            id: destinazioneAlloggio.value
+                        },
+                        stelle: stelleAlloggio.value
+                    }
+
+                    fetch(url, {
+                        method: method,
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(alloggio)
+                    }).then(() => {
+                        fetchAlloggi();
+                        formNewAlloggio.reset();
+                    });
+                });
+
+                //UTENTI
+                const formNewUtente = document.getElementById('newUtente');
+                formNewUtente.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const id = document.getElementById('idUtente').value;
+                    const url = id ? `http://localhost:8080/utenti/${id}` : 'http://localhost:8080/utenti';
+                    const method = id ? 'PUT' : 'POST';
+                    const nomeUtente = document.getElementById('floatingNomeNuovoUtente');
+                    const cognomeUtente = document.getElementById('floatingCognomeNuovoUtente');
+                    const emailUtente = document.getElementById('floatingEmailNuovoUtente');
+                    const giornoNascita = document.getElementById('giorno');
+                    const meseNascita = document.getElementById('mese');
+                    const annoNascita = document.getElementById('anno');
+                    const passwordUtente = document.getElementById('floatingPasswordNuovoUtente');
+                    const confermaUtente = document.getElementById('floatingPasswordConfNuovoUtente');
+                    const privacyUtente = document.getElementById('CheckPrivacyNuovoUtente');
+                    //manipolo la data di nascita
+                    let nascitaUtente = new Date();
+                    nascitaUtente.setDate(giornoNascita.value);
+                    nascitaUtente.setMonth((meseNascita.value-1));
+                    nascitaUtente.setFullYear(annoNascita.value);
+                    const utente = {
+                        nome: nomeUtente.value,
+                        cognome: cognomeUtente.value,
+                        email: emailUtente.value,
+                        password: passwordUtente.value,
+                        confermaPassword: confermaUtente.value,
+                        ruolo: 'USER',
+                        nascita: nascitaUtente,
+                        privacyLetta: privacyUtente.checked
+                    };
+
+                    fetch(url, {
+                        method: method,
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(utente)
+                    }).then(() => {
+                        fetchUtenti();
+                        formNewUtente.reset();
+                    })
+                })
+
+                //OFFERTE (PUT IN CUI MODIFICO LO SCONTO DELL'ALLOGGIO)
+                const formNewOfferta = document.getElementById('newOfferta');
+                formNewOfferta.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const id = document.getElementById('selectAlloggioOff').value;
+                    const url = `http://localhost:8080/alloggi/${id}/sconto`;
+                    const method = 'PUT';
+                    const sconto = document.getElementById('floatingScontoNuovaOfferta');
+                    const offerta = {
+                        sconto: sconto.value
+                    }
+
+                    fetch(url, {
+                        method: method,
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(offerta)
+                    }).then(() => {
+                        fetchOfferte();
+                        formNewOfferta.reset();
+                    });
+
+                })
+
+                //OPERAZIONI DELETE
+                window.deleteElemento = function (id, nome, tipo) {
+                    const risposta = prompt("Sicuro di voler eliminare "+nome+"? Digita "+nome+" per confermare.");
+                    if (risposta==nome) {
+                        fetch(`http://localhost:8080/${tipo}/${id}`, {
+                            method: 'DELETE'
+                        }).then(() => {
+                            fetchDestinazioni();
+                            fetchAlloggi();
+                            fetchPrenotazioni();
+                            fetchUtenti();
+                            fetchOfferte();
+                        })
+                    } else {
+                        alert('Inserimento sbagliato, eliminazione annullata.')
+                    }
+                }
+
+                //DELETE OFFERTA (PUT IN CUI SCONTO ALLOGGIO = 0)
+                window.deleteOfferta = function (id, nome) {
+                    const risposta = prompt("Sei sicuro di voler cancellare questa offerta? Digita "+nome+" per confermare.");
+                    const alloggio = {
+                        sconto: 0
+                    };
+                    if (risposta==nome) {
+                        fetch(`http://localhost:8080/alloggi/${id}/sconto`, {
+                            method: 'PUT',
+                            headers: {
+                            'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(alloggio)
+                        }).then(() => {
+                            fetchOfferte();
+                        })
+                    } else {
+                        alert("Cancellazione annullata");
+                    }
+                }
+
+                //MODIFICA MODALS
+                
+                //DESTINAZIONI
+                window.editModalDestinazione = function (id, nome) {
+                    if(id==0) {
+                        //faccio tornare il form allo stato originale
+                        //modifico il metodo del form
+                        document.getElementById('newDestinazione').setAttribute('method', 'post');
+                        //mostro il pulsante INVIA
+                        document.getElementById('inviaDestinazione').classList.remove('hidden');
+                        //nascondo il pulsante MODIFICA
+                        document.getElementById('modificaDestinazione').classList.add('hidden');
+                        //cambio il titolo del modal
+                        document.getElementById('DestinazioniModalLabel').innerText = 'NUOVA DESTINAZIONE';
+                    } else {
+                        //modifico il form
+                        //modifico il metodo del form
+                        document.getElementById('newDestinazione').setAttribute('method', 'put');
+                        //nascondo il pulsante INVIA
+                        document.getElementById('inviaDestinazione').classList.add('hidden');
+                        //mostro il pulsante MODIFICA
+                        document.getElementById('modificaDestinazione').classList.remove('hidden');
+                        //cambio il titolo del modal
+                        document.getElementById('DestinazioniModalLabel').innerText = 'Modifica '+nome;
+                        //inserisco l'id della destinazione
+                        document.getElementById('idDestinazione').value = id;
+                    }
+                }
+
+                //ALLOGGI
+                window.editModalAlloggi = function (id, nome) {
+                    if(id==0) {
+                        //faccio tornare il form allo stato originale
+                        document.getElementById('newAlloggio').setAttribute('method', 'post');
+                        //mostro il pulsante INVIA
+                        document.getElementById('inviaAlloggio').classList.remove('hidden');
+                        //nascondo il pulsante MODIFICA
+                        document.getElementById('modificaAlloggio').classList.add('hidden');
+                        //cambio il titolo del modal
+                        document.getElementById('AlloggiModalLabel').innerText = 'AGGIUNGI ALLOGGIO';
+                    } else {
+                        //modifico il form per l'operazione PUT
+                        //modifico il metodo del form
+                        document.getElementById('newAlloggio').setAttribute('method', 'put');
+                        //nascondo il pulsante INVIA
+                        document.getElementById('inviaAlloggio').classList.add('hidden');
+                        //mostro il pulsante MODIFICA
+                        document.getElementById('modificaAlloggio').classList.remove('hidden');
+                        //cambio il titolo del modal
+                        document.getElementById('AlloggiModalLabel').innerText = 'Modifica '+nome;
+                        //inserisco l'id della destinazione
+                        document.getElementById('idAlloggio').value = id;
+                    }
+                }
+
+                //UTENTI
+                window.editModalUtenti = function (id, nome) {
+                    if(id==0) {
+                        //modifico il metodo del form
+                        document.getElementById('newUtente').setAttribute('method', 'post');
+                        //mostro il pulsante INVIA
+                        document.getElementById('inviaUtente').classList.remove('hidden');
+                        //nascondo il pulsante MODIFICA
+                        document.getElementById('modificaUtente').classList.add('hidden');
+                        //cambio il titolo del modal
+                        document.getElementById('UtentiModalLabel').innerText = 'AGGIUNGI NUOVO UTENTE';
+                    } else {
+                        //modifico il metodo del form
+                        document.getElementById('newUtente').setAttribute('method', 'put');
+                        //nascondo il pulsante INVIA
+                        document.getElementById('inviaUtente').classList.add('hidden');
+                        //mostro il pulsante MODIFICA
+                        document.getElementById('modificaUtente').classList.remove('hidden');
+                        //cambio il titolo del modal
+                        document.getElementById('UtentiModalLabel').innerText = 'Modifica '+nome;
+                        //inserisco l'id della destinazione
+                        document.getElementById('idUtente').value = id;
+                    }
+                }
+
+                //OFFERTE
+                window.editModalOfferte = function (id, nome) {
+                    if(id==0) {
+                        //mostro il form per aggiungere una nuova offerta
+                        document.getElementById('inviaOfferta').classList.remove('hidden');
+                        document.getElementById('modificaOfferta').classList.add('hidden');
+                        document.getElementById('selectAlloggioOff').classList.remove('hidden');
+                        document.getElementById('OfferteModalLabel').innerText = 'NUOVA OFFERTA';
+                    } else {
+                        //mostro il form per modificare un'offerta esistente
+                        document.getElementById('inviaOfferta').classList.add('hidden');
+                        document.getElementById('modificaOfferta').classList.remove('hidden');
+                        document.getElementById('selectAlloggioOff').classList.add('hidden');
+                        document.getElementById('selectAlloggioOff').value = id;
+                        document.getElementById('OfferteModalLabel').innerText = "Modifica l'offerta: "+nome;
+                    }
+                }
+
+                //richiamo le funzioni fetch per mostrare i dati preesistenti al caricamento della pagina
+                controllo();
+                fetchDestinazioni();
+                fetchAlloggi();
+                fetchPrenotazioni();
+                fetchUtenti();
+                fetchOfferte();
+            })
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinazioni</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/destinazioni.css">
+ 
+</head>
+
+
+
+<body>
+  <body style="font-family: Poppins, sans-serif;"></body>
+  <!--nav bar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiar" style="background-color: #f4f4f4;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html">
+            <img src="IMMAGINI PROGETTO/png-clipart-tour-operator-logo-tours-graphic-design-egipto-paquetes-de-vacaciones-tour-operator-logo.png"
+                alt="Logo" width="200" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Chi Siamo
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="ChiSiamo.html">La Nostra Storia</a></li>
+                        <li><a class="dropdown-item" href="ContattiUtili.html">Contatti</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Destinazioni
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="destinazioni.html">Accedi a tutte le Destinazioni</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Alloggi
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Alloggi.html">Hotel</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Offerte
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="pacchetti.html">Pacchetti</a></li>
+                        <li><a class="dropdown-item" href="LastMinute.html">Last Minute</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Preventivo
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Preventivatore.html">Richiedi un Preventivo</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="dropdown" style="margin-right: 10px;">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="IMMAGINI PROGETTO/user-profile-icon-free-vector.png" alt="user" width="50"
+                        height="50">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Accedi.html">Accedi</a></li>
+                    <li><a class="dropdown-item" href="Registrati.html">Registrati</a></li>
+                </ul>
+            </div>
+            <br>
+            <form class="d-flex" role="search" style="margin-top: 12px;">
+                <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                <button class="btn btn-outline-primary" type="submit"
+                    style="border-color: #2e92a9; ">Cerca</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<nav class="shadow border-top pt-1" aria-label="breadcrumb" style="background-color: #f4f4f4;">
+    <div class="container-fluid ps-0 ms-0">
+        <ol class="breadcrumb mb-0 ms-2 ps-1 pb-1">
+            <li class="breadcrumb-item"><a href="./Home.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Destinazioni</li>
+        </ol>
+    </div>
+</nav>
+  <!--copertina-->
+  <div class="container-fluid text-center position-relative destinazione-copertina px-0">
+    <img id="copertina-img" class="img-fluid" src="./IMMAGINI PROGETTO/wide-shot-aegean-sea-coast-with-blue-transparent-water-greenery-around-rocks-bushes-trees-hills-pamorama-view-from-drone-greece.jpg">
+    <h1 id="copertina-testo" class="position-absolute top-50 start-50 translate-middle p-2 rounded shadow" style="text-align: center; vertical-align: top;">Le nostre mete</h1>
+  </div>
+  
+<!-- sezione mete preferite-->
+<section class="py-5 bg-light">
+<div class="container">
+  <h2 class="mb-4">Mete Preferite </h2>
+  <div class="row">
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="IMMAGINI PROGETTO/00-Parigi.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h3 class="text-center card-title">Parigi</h3>
+          <div class="card-content">
+            <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
+            <a href="#" class="btn btn-outline-warning">Scopri</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12 ">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="IMMAGINI PROGETTO/Roma.jpeg" alt="Card image cap" height="300px">
+        </div>
+        <div class="card-body">
+          <h3 class="text-center card-title">Roma</h3>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+          <a href="destinazionieEsempio.html" class="btn btn-outline-warning">Scopri</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="IMMAGINI PROGETTO/New York.jpeg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h3 class="text-center card-title">New York</h3>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-outline-warning">Scopri</a>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
+</section>
+
+
+<!-- sezione destinazioni mare-->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4">Mare </h2>
+    <div class="row">
+      <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="IMMAGINI PROGETTO/mare Sardegna.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="text-center card-title">Sardegna</h3>
+            <div class="card-content">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
+              <a href="#" class="btn btn-outline-warning">Scopri</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="IMMAGINI PROGETTO/Mare Messico.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="text-center card-title">Messico</h3>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-outline-warning">Scopri</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="IMMAGINI PROGETTO/Mare Brasile.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="text-center card-title">Messico</h3>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btnbtn-outline-warning">Scopri</a>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+  </section>
+<!-- sezione destinazioni montagna-->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4">Montagna </h2>
+    <div class="row">
+      <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="IMMAGINI PROGETTO/montagna Bali.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="text-center card-title">Indonesia</h3>
+            <div class="card-content">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
+              <a href="#" class="btn btn-outline-warning">Scopri</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="IMMAGINI PROGETTO/Montagna Canada.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="text-center card-title">Canada</h3>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-outline-warning">Scopri</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="IMMAGINI PROGETTO/Montagna Italia.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="text-center card-title">Dolomiti</h3>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-outline-warning">Scopri</a>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+  </section>
+<!-- carosello con tutte le destinazioni-->
+
+  <section class="py-5">
+    <div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+              aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+              aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+              aria-label="Slide 9"></button><button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+              aria-label="Slide 10"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
+              aria-label="Slide 11"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11"
+              aria-label="Slide 12"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12"
+              aria-label="Slide 13"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13"
+              aria-label="Slide 14"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14"
+              aria-label="Slide 15"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15"
+              aria-label="Slide 16"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16"
+              aria-label="Slide 17"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="17"
+              aria-label="Slide 18"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="18"
+              aria-label="Slide 19"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="19"
+              aria-label="Slide 20"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="20"
+              aria-label="Slide 21"></button>
+
+      </div>
+    <div class="carousel-inner">
+      <h2 class="mb-4">Tutte le nostre mete</h2>
+      <div class="carousel-item active" data-bs-interval="4000">
+          <img src="IMMAGINI PROGETTO/00-Parigi.jpg" class="d-block w-100" alt="Parigi">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Parigi</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+          </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+          <img src="IMMAGINI PROGETTO/londra-regno-unito-iStock-1265900812.jpeg" class="d-block w-100"
+              alt="Londra">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Londra</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+          </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+          <img src="IMMAGINI PROGETTO/barcellona.jpg" class="d-block w-100" alt="Barcellona">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Barcellona</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+          </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="IMMAGINI PROGETTO/view-ancient-roman-colosseum-arena.jpg" class="d-block w-100" alt="Roma">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Roma</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+        </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="IMMAGINI PROGETTO/Amsterdam.jpeg" class="d-block w-100" alt="Amsterdam">
+      <div class="carousel-caption d-none d-md-block">
+          <h5>Amsterdam</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+      </div>
+  </div>
+  <div class="carousel-item" data-bs-interval="4000">
+    <img src="IMMAGINI PROGETTO/Berlino2.jpeg" class="d-block w-100" alt="Berlino">
+    <div class="carousel-caption d-none d-md-block">
+        <h5>Berlino</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+    </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+  <img src="IMMAGINI PROGETTO/Praga.jpeg" class="d-block w-100" alt="Praga">
+  <div class="carousel-caption d-none d-md-block">
+      <h5>Praga</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+  </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+  <img src="IMMAGINI PROGETTO/Tokyo.jpeg" class="d-block w-100" alt="Tokyo">
+  <div class="carousel-caption d-none d-md-block">
+      <h5>Tokyo</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+  </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+  <img src="IMMAGINI PROGETTO/Bangkok.jpeg" class="d-block w-100" alt="Bangkok">
+  <div class="carousel-caption d-none d-md-block">
+      <h5>Bangkok</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+  </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+  <img src="IMMAGINI PROGETTO/Bali.webp" class="d-block w-100" alt="Bali">
+  <div class="carousel-caption d-none d-md-block">
+      <h5>Bali</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+  </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+  <img src="IMMAGINI PROGETTO/Hong Kong.jpeg" class="d-block w-100" alt="Hong Kong">
+  <div class="carousel-caption d-none d-md-block">
+      <h5>Hong Kong</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+  </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+  <img src="IMMAGINI PROGETTO/Singapore.jpeg" class="d-block w-100" alt="Singapore">
+  <div class="carousel-caption d-none d-md-block">
+      <h5>Singapore</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+  </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+  <img src="IMMAGINI PROGETTO/Pechino.jpeg" class="d-block w-100" alt="Pechino">
+  <div class="carousel-caption d-none d-md-block">
+      <h5>Pechino</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+  </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+  <img src="IMMAGINI PROGETTO/Seoul.jpeg" class="d-block w-100" alt="Seoul">
+  <div class="carousel-caption d-none d-md-block">
+      <h5>Seoul</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+  </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+          <img src="IMMAGINI PROGETTO/New York.jpeg" class="d-block w-100" alt="New York">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>New York</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+          </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="IMMAGINI PROGETTO/Los Angeles.jpeg" class="d-block w-100" alt="Los Angeles">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Los Angeles</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+        </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="IMMAGINI PROGETTO/Toronto.jpeg" class="d-block w-100" alt="Toronto">
+      <div class="carousel-caption d-none d-md-block">
+          <h5>Toronto</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+      </div>
+  </div>
+  <div class="carousel-item" data-bs-interval="4000">
+    <img src="IMMAGINI PROGETTO/Rio de Janeiro.jpeg" class="d-block w-100" alt="Rio de Janeiro">
+    <div class="carousel-caption d-none d-md-block">
+        <h5>Rio de Janeiro</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+    </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+  <img src="IMMAGINI PROGETTO/Città del Messico.jpeg" class="d-block w-100" alt="Città del Messico">
+  <div class="carousel-caption d-none d-md-block">
+      <h5>Città del Messico</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+  </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+  <img src="IMMAGINI PROGETTO/Buenos Aires.jpeg" class="d-block w-100" alt="Buenos Aires">
+  <div class="carousel-caption d-none d-md-block">
+      <h5>Buenos Aires</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+  </div>
+</div>
+<div class="carousel-item" data-bs-interval="4000">
+  <img src="IMMAGINI PROGETTO/Cancun.jpeg" class="d-block w-100" alt="Cancun">
+  <div class="carousel-caption d-none d-md-block">
+      <h5>Cancun</h5>
+      <p>Some representative placeholder content for the third slide.</p>
+  </div>
+</div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
+<!-- container  con link per tutte le destinazioni-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="mb-3">Europa</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="travel-link">Parigi, Francia</a></li>
+            <li><a href="destinazionieEsempio.html" class="travel-link">Roma, Italia</a></li>
+            <li><a href="#" class="travel-link">Londra, Regno Unito</a></li>
+            <li><a href="#" class="travel-link">Barcellona, Spagna</a></li>
+            <li><a href="#" class="travel-link">Berlino, Germania</a></li>
+            <li><a href="#" class="travel-link">Amsterdam, Paesi Bassi</a></li>
+            <li><a href="#" class="travel-link">Praga, Repubblica Ceca</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="mb-3">Asia</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="travel-link">Tokyo, Giappone</a></li>
+            <li><a href="#" class="travel-link">Bangkok, Thailandia</a></li>
+            <li><a href="#" class="travel-link">Bali, Indonesia</a></li>
+            <li><a href="#" class="travel-link">Hong Kong, Cina</a></li>
+            <li><a href="#" class="travel-link">Singapore</a></li>
+            <li><a href="#" class="travel-link">Pechino, Cina</a></li>
+            <li><a href="#" class="travel-link">Seoul, Corea del Sud</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="mb-3">Americhe</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="travel-link">New York, Stati Uniti</a></li>
+            <li><a href="#" class="travel-link">Los Angeles, Stati Uniti</a></li>
+            <li><a href="#" class="travel-link">Toronto, Canada</a></li>
+            <li><a href="#" class="travel-link">Rio de Janeiro, Brasile</a></li>
+            <li><a href="#" class="travel-link">Città del Messico, Messico</a></li>
+            <li><a href="#" class="travel-link">Buenos Aires, Argentina</a></li>
+            <li><a href="#" class="travel-link">Cancun, Messico</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<br>
+<footer class="footer w-100" style="font-family: Poppins, sans-serif;  ">
+  <br>
+  <br>
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+              <h3>La Nostra Azienda</h3>
+              <br>
+              <p>Tour Calypso S.R.L.S</p>
+              <p><strong>Roma</strong> , Via dei Cerchi 17, 00186</p>
+              <p><strong>Partita IVA: </strong>03842567922</p>
+
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+              <h3>Contatti</h3>
+              <br>
+              <a href="#">
+                  <img src="IMMAGINI PROGETTO/icons8-facebook-500.png" alt="Facebook">
+              </a>
+
+              <a href="#">
+                  <img src="IMMAGINI PROGETTO/icons8-instagram-500.png" alt="Instagram">
+              </a>
+
+              <a href="#">
+                  <img src="IMMAGINI PROGETTO/icons8-twitterx-500.png" alt="Twitter">
+              </a>
+
+              <a href="#">
+                  <img src="IMMAGINI PROGETTO/icons8-youtube-logo-500.png" alt="Youtube">
+              </a>
+              <br>
+              <br>
+              <a class="telefono" href="#">
+                  <img src="IMMAGINI PROGETTO/telefono.png" alt="telefono">
+                  <span> +39 586 718 8296</span>
+              </a>
+              <br>
+              <br>
+              <a class="email" href="#">
+                  <img src="IMMAGINI PROGETTO/email.png" alt="email">
+                  <span> calypsotour@pec.it</span>
+              </a>
+
+
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+              <div class="linkbut">
+                  <h3>Link Utili</h3>
+                  <br>
+                  <a href="./Home.html">Home</a>
+                  <br>
+                  <br>
+                  <a href="./ChiSiamo.html">Chi siamo</a>
+                  <br>
+                  <br>
+                  <a href="#">Servizi</a>
+                  <br>
+                  <br>
+                  <a href="#">Contatti</a>
+                  <br>
+                  <br>
+                  <a href="#">Metodi di Pagamento</a>
+                  <br>
+                  <br>
+                  <a href="#">Bagaglio</a>
+                  <br>
+                  <br>
+                  <a href="#">Assicurazioni</a>
+                  <br>
+                  <br>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+              <div class="linkbut">
+                  <h3>Calypso World</h3>
+                  <br>
+                  <a href="#">Lavora con Noi</a>
+                  <br>
+                  <br>
+                  <a href="#">Il Gruppo</a>
+                  <br>
+                  <br>
+                  <a href="./Accedi.html">Area Riservata</a>
+                  <br>
+                  <br>
+                  <a href="#">Convenzioni</a>
+                  <br>
+                  <br>
+                  <a href="#">Escursioni</a>
+                  <br>
+                  <br>
+                  <a href="#">FAQ</a>
+                  <br>
+                  <br>
+                  <a href="#">Guida per gli Utenti</a>
+                  <br>
+                  <br>
+                  <a href="#">Guida per i Gestori</a>
+                  <br>
+                  <br>
+              </div>
+          </div>
+
+
+      </div>
+  </div>
+</footer>  

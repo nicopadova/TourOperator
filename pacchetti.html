@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pacchetti</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--BOOTSTRAP CSS-->
+        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+        <!--FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/destinazioni.css">
+
+        <style>
+             .last-minute-text {
+                background-color: #add9e7;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            h2 {
+                color: #EF7365;
+            }
+
+            .accordion-collapse {
+                background-color: #add9e7;
+            }
+
+            .info:hover {
+                border-style: solid;
+                border-width: 2px;
+                border-color: #FBD26C;
+                text-decoration: underline;
+            }
+
+        </style>
+        
+
+<body>
+  <body style="font-family: Poppins, sans-serif;"></body>
+  <!--nav bar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiar" style="background-color: #f4f4f4;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="file:///C:/Users/gabry/Desktop/Tour%20Operator/Home.html">
+            <img src="IMMAGINI PROGETTO/png-clipart-tour-operator-logo-tours-graphic-design-egipto-paquetes-de-vacaciones-tour-operator-logo.png"
+                alt="Logo" width="200" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Chi Siamo
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="file:///C:/Users/gabry/Desktop/Tour%20Operator/ChiSiamo.html">La Nostra Storia</a></li>
+                        <li><a class="dropdown-item" href="ContattiUtili.html">Contatti</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Destinazioni
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="destinazioni.html">Accedi a tutte le Destinazioni</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Alloggi
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Alloggi.html">Hotel</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Offerte
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="pacchetti.html">Pacchetti</a></li>
+                        <li><a class="dropdown-item" href="LastMinute.html">Last Minute</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Preventivo
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Preventivatore.html">Richiedi un Preventivo</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="dropdown" style="margin-right: 10px;">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="IMMAGINI PROGETTO/user-profile-icon-free-vector.png" alt="user" width="50"
+                        height="50">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Accedi.html">Accedi</a></li>
+                    <li><a class="dropdown-item" href="Registrati.html">Registrati</a></li>
+                </ul>
+            </div>
+            <br>
+            <form class="d-flex" role="search" style="margin-top: 12px;">
+                <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                <button class="btn btn-outline-primary" type="submit"
+                    style="border-color: #2e92a9; ">Cerca</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<nav class="shadow border-top pt-1" aria-label="breadcrumb" style="background-color: #f4f4f4;">
+    <div class="container-fluid ps-0 ms-0">
+        <ol class="breadcrumb mb-0 ms-2 ps-1 pb-1">
+            <li class="breadcrumb-item"><a href="./Home.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Pacchetti</li>
+        </ol>
+    </div>
+</nav>
+  <!--copertina-->
+  <div class="container-fluid text-center position-relative destinazione-copertina px-0">
+    <img id=copertina-img class="img-fluid" src="./IMMAGINI PROGETTO/00-Parigi.jpg">
+    <h1 id="copertina-testo" class="position-absolute top-50 start-50 translate-middle p-2 rounded shadow">I nostri pacchetti</h1>
+</div>
+
+  
+<!-- sezione mete preferite-->
+<section class="py-5 bg-light">
+<div class="container">
+  <h2 class="mb-4">I pacchetti in voga </h2>
+  <div class="row">
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="IMMAGINI PROGETTO/Montagna Italia.jpeg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h3 class="text-center card-title">Pacchetto Alpi</h3>
+          <div class="card-content">
+            <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
+            <a href="#" class="btn btn-outline-warning">Scopri</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12 ">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="IMMAGINI PROGETTO/Mare Messico.jpeg" alt="Card image cap" height="300px">
+        </div>
+        <div class="card-body">
+          <h3 class="text-center card-title">Pacchetto Caraibi</h3>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+          <a href="destinazionieEsempio.html" class="btn btn-outline-warning">Scopri</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="IMMAGINI PROGETTO/Bali.webp" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h3 class="text-center card-title">Pacchetto Indonesia</h3>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-outline-warning">Go somewhere</a>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="IMMAGINI PROGETTO/mare Sardegna.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="text-center card-title">Pacchetto Sardegna</h3>
+            <div class="card-content">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
+              <a href="#" class="btn btn-outline-warning">Scopri</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="IMMAGINI PROGETTO/Tokyo.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="text-center card-title">Pacchetto Giappo-tour</h3>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-outline-warning">Scopri</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="IMMAGINI PROGETTO/Pechino.jpeg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="text-center card-title">Pacchetto Via della seta</h3>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-outline-warning">Scopri</a>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+  </section>
+
+  
+
+
+
+
+  <ul class="nav nav-tabs mt-3">
+    <li class="nav-item">
+        <a class="nav-link active pag offerte_Ita position-relative" aria-current="page" onclick="cambiaPagina('pacchetti_Ita')">Italia</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link pag offerte_Eu position-relative" onclick="cambiaPagina('Pacchetti_As')">Asia</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link pag offerte_Ame position-relative" onclick="cambiaPagina('Pacchetti_Ame')">America</a>
+    </li>
+</ul>
+<div class="container pacchetti" id="pacchetti_Ita">
+    <div class="row px-5">
+        <div class="col-12 text-center py-2"> <!--TITOLO-->
+            <h2>I nostri pacchetti per l'Italia!</h2>
+        </div>
+        <div class="col-12"> <!--BODY OFFERTE-->
+            <!--SARDEGNA, SICILIA E VENEZIA-->
+            <div class="accordion shadow" id="accordionExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Sardegna
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center">
+                                <div class="col-12 col-md-6">
+                                    <img src="./IMMAGINI PROGETTO/wide-shot-aegean-sea-coast-with-blue-transparent-water-greenery-around-rocks-bushes-trees-hills-pamorama-view-from-drone-greece.jpg" class="w-75 rounded">
+                                </div>
+                                <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                    <p>Scopri il nostro pacchetto di 9 gg per un fantastico viaggio in <strong>Sardegna</strong>. Scopri questa terra magnifica insieme a noi!</p>
+                                    <h6 class="mt-4">PRENOTA ORA!</h6>
+                                    <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Alpi
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center" >
+                                <div class="col-12 col-md-6">
+                                    <img src="./IMMAGINI PROGETTO/beautiful-shot-high-rocky-mountains-hills-covered-snow-leftover-spring.jpg" class="w-75 rounded">
+                                </div>
+                                <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                    <p>Scopri il nostro pacchetto di 7 gg per un fantastico viaggio sulle <strong>Alpi</strong>. Scopri queste montagne magnifiche insieme a noi!</p>
+                                    <h6 class="mt-4">PRENOTA ORA!</h6>
+                                    <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Roma
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center">
+                                <div class="col-12 col-md-6">
+                                    <img src="./IMMAGINI PROGETTO/view-ancient-roman-colosseum-arena.jpg" class="w-75 rounded">
+                                </div>
+                                <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                    <p>Scopri il nostro pacchetto di 6 gg per un fantastico viaggio a <strong>Roma</strong>. Scopri questa città magnifica insieme a noi!</p>
+                                    <h6 class="mt-4">PRENOTA ORA!</h6>
+                                    <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container pacchetti hidden" id="Pacchetti_As">
+    <div class="row px-5">
+        <div class="col-12 text-center py-2"> <!--TITOLO-->
+            <h2>I nostri pacchetti per l'Asia!</h2>
+        </div>
+        <div class="col-12"> 
+            <!--Giappone, Cina, Indonesia-->
+            <div class="accordion shadow" id="accordionExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Giappo-tour
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center">
+                                <div class="col-12 col-md-6">
+                                    <img src="./IMMAGINI PROGETTO/Tokyo.jpeg" class="w-75 rounded">
+                                </div>
+                                <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                    <p>Scopri il nostro pacchetto di 14 gg per un fantastico viaggio in<strong>Giappone</strong>. Scopri questa terra magnifica insieme a noi!</p>
+                                    <h6 class="mt-4">PRENOTA ORA!</h6>
+                                    <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           Via della seta
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center" >
+                                <div class="col-12 col-md-6">
+                                    <img src="./IMMAGINI PROGETTO/Pechino.jpeg" class="w-75 rounded">
+                                </div>
+                                <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                    <p>Scopri il nostro pacchetto di 21 gg per un fantastico viaggio in <strong>Cina</strong>. ripercorri la via della seta insieme a noi!</p>
+                                    <h6 class="mt-4">PRENOTA ORA!</h6>
+                                    <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Indonesia
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center">
+                                <div class="col-12 col-md-6">
+                                    <img src="./IMMAGINI PROGETTO/Bali.webp" class="w-75 rounded">
+                                </div>
+                                <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                    <p>Scopri il nostro pacchetto di 9 gg per un fantastico viaggio in <strong>Indonesia</strong>. Scopri questa terra magnifica insieme a noi!</p>
+                                    <h6 class="mt-4">PRENOTA ORA!</h6>
+                                    <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container pacchetti hidden" id="Pacchetti_Ame">
+    <div class="row px-5">
+        <div class="col-12 text-center py-2"> <!--TITOLO-->
+            <h2>I nostri pacchetti per l'America!</h2>
+        </div>
+        <div class="col-12"> 
+            <!--NEW YORK, LOS ANGELES E BUENOS AIRES-->
+            <div class="accordion shadow" id="accordionExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            New York
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center">
+                                <div class="col-12 col-md-6">
+                                    <img src="./IMMAGINI PROGETTO/New York.jpeg" class="w-75 rounded">
+                                </div>
+                                <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                    <p>Scopri il nostro pacchetto di 11 gg per un fantastico viaggio a <strong>New York</strong>. Scopri questa città magnifica insieme a noi!</p>
+                                    <h6 class="mt-4">PRENOTA ORA!</h6>
+                                    <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Los Angeles
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center" >
+                                <div class="col-12 col-md-6">
+                                    <img src="./IMMAGINI PROGETTO/Los Angeles.jpeg" class="w-75 rounded">
+                                </div>
+                                <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                    <p>Scopri il nostro pacchetto di 12 gg per un fantastico viaggio a <strong>Los Angeles</strong>. Scopri la città degli angeli insieme a noi!</p>
+                                    <h6 class="mt-4">PRENOTA ORA!</h6>
+                                    <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Buenos Aires
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row text-center">
+                                <div class="col-12 col-md-6">
+                                    <img src="./IMMAGINI PROGETTO/Buenos Aires.jpeg" class="w-75 rounded">
+                                </div>
+                                <div class="col-12 col-md-6 ps-0 pe-5 pt-4">
+                                    <p>Scopri il nostro pacchetto di 16 gg per un fantastico viaggio a <strong>Buenos Aires</strong>. Scopri questa città magnifica insieme a noi!</p>
+                                    <h6 class="mt-4">PRENOTA ORA!</h6>
+                                    <button type="button" class="btn info text-uppercase mt-2" style="background-color: #EF7365; color:#F4F4F4">scopri di più</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--JS BOOTSTRAP-->
+<script src="./JS/bootstrap.bundle.min.js"></script>
+<!--JS-->
+<script>
+    const pagPacchetti = document.getElementsByClassName('pacchetti');
+    function cambiaPagina(id_vis) {
+        //rendo visibile il container con le offerte giuste
+        for (let pagina of pagPacchetti) {
+            if (pagina.id==id_vis) {
+                //è la pagina che voglio vedere
+                if (pagina.classList.contains('hidden')) {
+                    //se la pagina è nascosta allora la rendo visibile
+                    pagina.classList.remove('hidden');
+                }
+            } else {
+                //è la pagina che devo nascondere
+                if(!(pagina.classList.contains('hidden'))) {
+                    //se non è nascosta allora la nascondo
+                    pagina.classList.add('hidden');
+                }
+            }
+        }
+        //cambio i link per le pagine
+        const pagine = document.getElementsByClassName('pag');
+        for (let pag of pagine) {
+            if (pag.classList.contains('active')) {
+                if (pag.classList.contains(id_vis)) {
+                    //non fa nulla se il pulsante con classe active è quello che deve essere visualizzato
+                } else {
+                    //cambio gli attributi del link rendendolo non attivo
+                    pag.classList.remove('active');
+                    pag.removeAttribute('aria-current')
+                }
+            } else {
+                if (pag.classList.contains(id_vis)) {
+                    //la pagina visualizzata non ha la classe active allora cambio i suoi attributi
+                    pag.classList.add('active');
+                    pag.setAttribute('aria-current', 'page');
+                } else {
+                    //la pagina non attiva non è da visualizzare quindi non faccio nulla
+                }
+            }
+        }
+    }
+</script>
+</body>
+<br>
+<footer class="footer pt-2" style="font-family: Poppins, sans-serif; background-color: #366880;">
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <h3>La Nostra Azienda</h3>
+            <br>
+            <p>Tour Calypso S.R.L.S</p>
+            <p><strong>Roma</strong> , Via dei Cerchi 17, 00186</p>
+            <p><strong>Partita IVA: </strong>03842567922</p>
+
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <h3>Contatti</h3>
+            <br>
+            <a href="#">
+                <img src="IMMAGINI PROGETTO/icons8-facebook-500.png" alt="Facebook">
+            </a>
+            <br>
+            <a href="#">
+                <img src="IMMAGINI PROGETTO/icons8-instagram-500.png" alt="Instagram">
+            </a>
+            <br>
+            <a href="#">
+                <img src="IMMAGINI PROGETTO/icons8-twitterx-500.png" alt="Twitter">
+            </a>
+            <br>
+            <a href="#">
+                <img src="IMMAGINI PROGETTO/icons8-youtube-logo-500.png" alt="Youtube">
+            </a>
+            <br>
+            <a class="telefono" href="#">
+                <img src="IMMAGINI PROGETTO/telefono.png" alt="telefono">
+                <span> +39 586 718 8296</span>
+            </a>
+
+            <br>
+            <a class="email" href="#">
+                <img src="IMMAGINI PROGETTO/email.png" alt="email">
+                <span> calypsotour@pec.it</span>
+            </a>
+
+
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <h3>Link Utili</h3>
+            <br>
+            <a href="./Home.html">Home</a>
+            <br>
+            <a href="./ChiSiamo.html">Chi siamo</a>
+            <br>
+            <a href="#">Servizi</a>
+            <br>
+            <a href="#">Contatti</a>
+            <br>
+            <a href="#">Metodi di Pagamento</a>
+            <br>
+            <a href="#">Bagaglio</a>
+            <br>
+            <a href="#">Assicurazioni</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <h3>Calypso World</h3>
+            <br>
+            <a href="#">Lavora con Noi</a>
+            <br>
+            <a href="#">Il Gruppo</a>
+            <br>
+            <a href="./Accedi.html">Area Riservata</a>
+            <br>
+            <a href="#">Convenzioni</a>
+            <br>
+            <a href="#">Escursioni</a>
+            <br>
+            <a href="#">FAQ</a>
+            <br>
+            <a href="#">Guida per gli Utenti</a>
+            <br>
+            <a href="#">Guida per i Gestori</a>
+        </div>
+        
+        
+    </div>
+</div>
+</footer>
+</html>
